@@ -1,0 +1,1949 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]>     <html lang="pl" class="lt-ie8"> <![endif]-->
+<!--[if IE 9]>         <html lang="pl" class="lt-ie8 lt-ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html data-pwa="1" lang="pl"> <!--<![endif]-->
+<head data-features="WyJwcm9kdWN0X2J1bmRsZXMiLCJzYWFzX2JpbGxpbmciLCJyZWRpcmVjdHNfY29uZmlnIiwicmVkaXJlY3RzX2RvbWFpbnMiLCJyZWRpcmVjdHNfb2JqZWN0cyIsInJlZGlyZWN0c19yb3V0ZXIiLCJyZWRpcmVjdHNfYXBpIiwiYWxsZWdyb19kb3dubG9hZF9vcmRlcnMiLCJhbGxlZ3JvX2ltcG9ydF9hdWN0aW9ucyIsImFsbGVncm9fYXV0b19pbXBvcnRfYXVjdGlvbnMiLCJhbGxlZ3JvX3VwZGF0ZV9hdWN0aW9ucyIsInB3YSIsImFsbGVncm9fc2VuZF9zaGlwcGluZ19udW1iZXIiLCJzZW9fZ2Z4Iiwic2hvd19wcmVtaXVtX2ZlYXR1cmVzIiwicmVjb21tZW5kYXRpb25zX3RyYWNraW5nIiwicmVjb21tZW5kYXRpb25zX3N0YXRzX2FuYWx5emVyIiwib2JqZWN0c19zdGF0c19hbmFseXplciIsInJlY29tbWVuZGF0aW9uc19tb2RlbF9maXQiLCJyZWNvbW1lbmRhdGlvbnNfYWRtaW4iLCJiZWxsX21lc3NhZ2VzIiwiaW5wb3N0X21hcCIsIm5icF9jdXJyZW5jaWVzIiwicGF5bWVudF9ncGF5IiwicGFjemtvbWF0eV9kaXNhYmxlIiwiYWxsZWdyb19kb3dubG9hZF9vcmRlcnNfc3VyY2hhcmdlcyIsImFsbGVncm9fb3JkZXJfYW5kX3RyYW5zYWN0aW9uX3VpZF9maWx0ZXJzIiwiYWxsZWdyb19kb3dubG9hZF9vcmRlcnNfYWRkaXRpb25hbF9zZXJ2aWNlcyIsImFsbGVncm9fdXBkYXRlX3F1YW50aXR5X211bHRpYWN0aW9uIiwiYWxsZWdyb191cGRhdGVfcHJpY2VfbXVsdGlhY3Rpb24iLCJ0d29fZmFjdG9yIiwidHdvX2ZhY3Rvcl9zbXMiLCJhbGxlZ3JvX3RlbXBsYXRlX2V4dGVuZGVkIiwicHJvZHVjdF9kdXBsaWNhdGVfbmV3X29wdGlvbnMiLCJ3ZWJwdXNoX2FkbWluIiwiZGVmYXVsdF9maWx0ZXJfcHJvZmlsZXMiLCJmaWxlX21hbmFnZW1lbnQiLCJpbnBvc3RfcHd3IiwidHJhZmZpY19hbmFseXplciIsInNlYXJjaF9hZG1pbiIsInNlYXJjaF9jbGllbnQiLCJzZWFyY2hfaW5kZXhlciIsImF1cm9yYV9yZWZhY3RvcmluZyIsImFsbGVncm9fc3RhdHVzX21hcCIsImd0dV9jb2RlIiwibmV3X2RhdGVwaWNrZXIiLCJ2YXRfZXUiLCJuZXdfYWxsZWdyb190ZW1wbGF0ZV9jcmVhdG9yIiwiYWxsZWdyb19hc3NpZ25fdGF4X3ZhbHVlX211bHRpYWN0aW9uIiwiYWxsZWdyb19hdWN0aW9uc190YXhfdmFsdWVfZmlsdGVycyIsImFsbGVncm9fY3JlYXRvcl90YXhfc2VsZWN0aW9uX2xpc3QiLCJhbGxlZ3JvX2RldGVjdF9hbGxlZ3JvX3Byb2R1Y3RfbXVsdGlhY3Rpb24iLCJhbGxlZ3JvX2Fzc2lnbl9hbGxlZ3JvX3Byb2R1Y3RfbXVsdGlhY3Rpb24iLCJhbGxlZ3JvX2F1Y3Rpb25zX2hhc19hbGxlZ3JvX3Byb2R1Y3RfZmlsdGVycyIsImFsbGVncm9fcHJvZHVjdHNfaGFzX2FsbGVncm9fcHJvZHVjdF9maWx0ZXJzIiwiY2xlYW5fdXBfbWFpbF9sb2dzIiwibmV3X29yZGVyX25vdGVzIiwibmV3X2dhbGxlcnkiLCJ0cmFmZmljX25ld19yZXBvcnRzIiwicGVyZm9ybWFuY2VfcmVwb3J0cyIsImN1c3RvbWVyX3ByaXZhY3kiLCJpbWdfc2l6ZV9lZGl0YWJsZSIsImRpZ2l0YWxfbGlua3MiLCJjb2xsZWN0aW9ucyIsImdmeF9tZXRhZGF0YSIsInByb2dyZXNzaXZlX2Rpc2NvdW50cyIsInN0b2NrMF9zeW5jIiwic3RvY2swIiwiZmFjZWJvb2tfYnVzaW5lc3NfZXh0ZW5zaW9uIiwiZmFjZWJvb2tfY2FwaSIsInJlY29tbWVuZGF0aW9uc19jb21wdXRlX3N1bXNfb3B0aW1pemF0aW9uIiwicmVjb21tZW5kYXRpb25zX3N1bXNfb3B0aW1pemF0aW9uIiwid2FyZWhvdXNlc19sb2dzIiwid2FyZWhvdXNlcyIsImdvb2dsZV9hbmFseXRpY3NfdjQiLCJwcm9kdWN0X2R1cGxpY2F0ZV9jb2xsZWN0aW9ucyIsInJlc3RhcGlfd2l0aG91dF9sb2NrcyIsImRpc2FibGVfY2xpZW50X3Nlc3Npb25fdWFfcmV2YWxpZGF0ZSIsImNvbmRpdGlvbl9vbl9wcm9tb2NvZGVzbGlzdCIsInBob25lX3ZhbGlkYXRpb24iLCJ1cmxfcmVwYWlyX3N0cmluZ19kaXNhYmxlIiwicHJvZHVjdHNfb3JkZXIiLCJhbGxlZ3JvX2VycGJveCIsIm1haW5fcGFnZV9jb2xsZWN0aW9uIiwicmVicmFuZGluZ19hcGlsbyIsInNob3Blcl9zaGlwbWVudHMiLCJjYW1wYWdpbnNfdGlrdG9rIiwicHJvbW90aW9uc19wcm9kdWN0c19tYW51YWxfb3JkZXIiLCJuZXdfcHJvZHVjdHNfbWFudWFsX29yZGVyIiwiZnJvbnRza2luX2NvbmZpZ3VyYXRvciIsInBheW1lbnRfYXBwbGVfcGF5IiwiYnlfZGF0ZV9hZGRfc29ydF90eXBlcyIsInBheW1lbnRfZmluYW5jaW5nX2JydXR0byIsImNyZWF0ZV9tYWlsX21lc3NhZ2VfaWQiLCJzaG9wZXJfY2FtcGFpZ25zX25ld19kYXRhX3NvdXJjZSIsInNob3Blcl9jYW1wYWlnbnNfcmVwb3J0cyIsIm1pZ3JhdGVfc2VhcmNoX3NldHRpbmdzX2Zyb21fc2tpbiIsInBheXBvX2Jhbm5lciIsIm9yZGVyX3BpY2t1cF9wb2ludF9pbl9jb3JlIiwicGF5bWVudHNfYm1fdG9fYXV0b3BheV9saW5rcyIsInVzZV9vYmplY3Rfc3RvcmFnZV9mb3JfdGh1bWJzIiwib3JkZXJfcGlja3VwX3BvaW50X2NvbXBhdGliaWxpdHkiLCJwcm9kdWN0X29wdGlvbl9jb2xvcl9zdHJ1Y3RfYWdncmVnYXRlX2RhdGEiLCJzaG9wZXJQMjRfcGF5bWVudHMiLCJwYXltZW50X2tsYXJuYV9mbG9hdF9wcm9kdWN0X3F1YW50aXR5IiwicGF5bWVudF9wYXl1X3BlbmRpbmdfdHJhbnNhY3Rpb25zX3N5bmNocm9uaXphdGlvbiIsInBheW1lbnRfYXBwbGVfcGF5X2luX3NldHRpbmdzIiwibmV3X2NhcmRzX3ZpZXciLCJnb29nbGVfMmZhX3FyX2NvZGVfZ2VuZXJhdGVfbG9jYWxseSIsInN2ZV9pbWFnZS1lZGl0b3IiLCJhbGxlZ3JvX3Byb21vX29wdGlvbnMiLCJhbGxlZ3JvX3Byb2R1Y3RpemF0aW9uIiwiY29udHJvbF9jYXRlZ29yeV9yZWZhY3RvciIsImFsbGVncm9fcHJvZ3Jlc3NfdmFsaWRhdGlvbl9lcnJvciIsImFsbGVncm9fbG9ja19wcm9jZXNzIiwicHJvZHVjdF9jYXJkX2FkZGl0aW9uYWxfd2FyZWhvdXNlc19zaGlwcGluZ190aW1lIiwiY2xpZW50X2ZpbHRlcl9jbGVhbl9hc2NpaSIsImJhc2tldF9hZGRyZXNzX3BsdWdpbnMiLCJwb2N6dGFfcG9sc2thX2luc3VyYW5jZSIsInNob3Blcl9jYW1wYWlnbnNfb3JkZXJfZW1haWwiLCJzaGlwbWVudF9jcmVhdGVfaW52ZXJ0X3Nob3BlcnNoaXBtZW50IiwicGFyY2Vsc19jcmVhdGVfb3JkZXJfaWRfbm90ZXMiLCJhcHBzdG9yZV9hcGlsb19tdWx0aV9jaGFubmVsIiwicGFsbGV0X3BhY2thZ2UiLCJzaGlwbWVudF9jcmVhdGVfaW52ZXJ0X2FwYWN6a2EiLCJzaGlwbWVudF9jcmVhdGVfaW52ZXJ0X3BhY3prb21hdHkiLCJzcF9pbnBvc3RfcG9pbnRfdG9fZG9vciIsInNoaXBtZW50X2NyZWF0ZV9pbnZlcnRfYWxsZWdybyIsInNoaXBtZW50X2NyZWF0ZV9pbnZlcnRfaW5wb3N0IiwiZ3BheV9jbGVhbl9waG9uZV9udW1iZXIiLCJjb3VudF9wcm9kdWN0c19pbl9vcHRpb25fdmFsdWVzX2ZpbHRlcl9hdF9vbmNlIiwib3B0aW1pemVkX3BsYWNlX29yZGVyX3RyYW5zYWN0aW9uIiwiZGlzYWJsZV9wcmljZV9maWx0ZXJfcmFuZ2VzIiwiY2FtcGFnaW5zX3dwYWRzIiwicGFyY2Vsc19wcmludF9kb2N1bWVudHNfbmV3X2ZpbGVuYW1lIiwib21uaWJ1c19iYWNrZW5kIiwib21uaWJ1c19iYWNrZW5kX3YyIiwib21uaWJ1c19mcm9udGVuZCIsInNpdGVtYXBfYWRkaXRpb25hbF9vcHRpb25zIiwicGF5bWVudF9uZXdfc2VydmljZV9leGlzdHMiLCJndGFnX2VtaXRfZXZlbnQiLCJwYXlfcGFsX2V4cHJlc3NfY2hlY2tvdXRfcmVwYWlyIiwiT25saW5lUGF5bWVudF9QYXlQb19JbnRlZ3JhdGlvbiIsInBheW1lbnRfbmV3X29ubGluZXBheW1lbnRfZm9ybV91cGRhdGUiLCJjYWNoZV90YWdzX29wdGltaXplciIsInNlc3Npb25fc3RhcnRzX2luX3JlYWRfb25seV9tb2RlIiwic3RvY2tfb3B0aW1pemF0aW9uIiwicGF5bWVudF9ibV9waG90b192ZXJpZmljYXRpb24iLCJwYXltZW50X3JlZnVuZF9wcm9jZXNzX2pvYiIsIm9ubGluZXBheW1lbnRfZGlzYWJsZV9hY2NvdW50X251bWJlcl90eXBlIiwiYXBwc3RvcmVfcmV0dXJucyIsInBheW1lbnRfZXh0ZW5kX3N5bmNzIiwicmV2ZXJzZV9wYXltZW50X25hbWVfZGlzcGxheSIsInJlcGVhdGluZ19wYXlwb190cmFuc2FjdGlvbnMiLCJwYXltZW50X25ld19mb3JtX2JhY2tlbmQiLCJhcHBzdG9yZV9hcGlsbyIsImNhbXBhZ2luc19tc2FkcyIsImltcG9ydF9nZnhfZnJvbV91cmxfbW92ZV9vdXRfb2ZfdHJhbnNhY3Rpb24iLCJzdG9ja19mcm9udF9jYWNoZV9rZXkiLCJ1cGRhdGVfZ2F0ZXdheV9pZCIsIm9ubGluZXBheW1lbnRfcGhvbmVfdmFsaWQiLCJhcHBzdG9yZV9zaG9wZXJfY29ubmVjdCIsInJvdXRlcl91cmxfYWRkX3F1ZXJ5X3BhcmFtcyIsImZtY19zdGFydGluZ19jb3VudGVyX3ZhbHVlIiwibmV3X2NvbGxlY3Rpb25fbGF5b3V0IiwibG95YWx0eV9tYWlsX3Blcl91c2VyIiwib25saW5lcGF5bWVudF9yZWZ1bmRzX2RiX3RyYW5zYWN0aW9uIiwiZm1jX2xvY2FsX2NvdW50ZXIiLCJwYXltZW50X25vbl9hY2NvdW50ZWRfYWN0aXZpdHlfc2V0dGluZ3MiLCJkeW5hbWljX29wdGlvbnNfZm9yX25ld19hY2NvdW50cyIsInBheW1lbnRfZmluYW5jaW5nX25ld19kZXNjcmlwdGlvbiIsIndmaXJtYV9hcGlfYXV0aCIsImZyb250X2FwaV9yZWdpc3Rlcl9maXgiLCJvbW5pYnVzX3ByaWNlcyIsImRvbWFpbl9tYW5hZ2VyX3N5bmNfZG9tYWluc19yZWZhY3RvciIsImdvb2dsZV9hbmFseXRpY3NfdjRfY2FtcGFpZ24iLCJzaG9wZXJfY2FtcGFpZ25zX2J1eV9jYW1wYWlnbiIsInNob3Blcl9jYW1wYWlnbnNfZ29vZ2xlX2dtY19uZXdfcmVxdWVzdF9oYXNoIiwicHJvbW9fY29kZXNfZGJfdGltZV9lbmFibGVkIiwib25saW5lcGF5bWVudF96aXBjb2RlX3ZhbGlkIiwid2ViZGF2IiwiYXBpX29yZGVyc19jcmVhdGVfY3VycmVuY3lfcmF0ZSIsIm5ld19maWx0ZXJzX2NvbmZpZyIsImdwYXlfZXNjYXBlX21lcmNoYW50X2RhdGEiLCJwcm9tb3Rpb25fdGltZSIsImRpc2FibGVfZG90cGF5IiwiY29uZmlnX2dvb2dsZV9yZW1hcmtldGluZyIsImFwaV9zcGVjaWFsX3Njb3BlcyIsInBheW1lbnRzX2JtX3RvX2F1dG9wYXkiLCJwYXltZW50X2NyZWF0ZV9zaW5nbGVfdHJhbnNhY3Rpb25zIiwicGFydG5lcl9nb29nbGVfYW5hbHl0aWNzX3Y0IiwiYXBpX29yZGVyX29yaWdpbl9zcGVjaWFsX3Njb3BlIiwib3JkZXJfcGlja3VwX3BvaW50X2RiX2RlZGljYXRlZF9zYXZlIiwib3JkZXJzX3Byb3BlcnRpZXNfYWxsZWdyb19zbWFydCIsInBheW1lbnRfcDI0X3JlZmVycmFsX2xpbmsiLCJvcmRlcl9waWNrdXBfcG9pbnRfZGJfZGVkaWNhdGVkX3JlYWQiLCJwYXltZW50X2RvY3VtZW50X251bWJlciIsInByb21vY29kZV90aW1lIiwia2xhcm5hX2R5bmFtaWNfYmFubmVyIiwiZGlzYWJsZV9wcm9jZXNzX2Jhc2tldF9xdWV1ZSIsInNob3Blcl9jYW1wYWlnbnNfb3JkZXJfY3JlYXRlZCIsInNob3Blcl9jYW1wYWlnbnNfb3JkZXJfYXBpX3V0bSIsIm9yZGVyX3BheW1lbnRfbWFpbHMiLCJzdG9yZWZyb250X3NraW5zdG9yZV91cGRhdGVzIiwic3RvcmVmcm9udF91cGRhdGUiLCJjdXN0b21lcl9wcml2YWN5X3YyIiwibWljcm9zb2Z0X2FkcyIsInNob3Blcl9jYW1wYWlnbnNfYXBwc3RvcmVfbGlua3MiLCJjb29raWVfc2V0dGluZ3NfbGluayIsInNwZWNpYWxfb2ZmZXJzX3N0b2Nrc192MCIsInNlYXJjaF9hZG1pbl9leGNlcnB0X3N1cHBvcnQiLCJzaG9wZXJfY2FtcGFpZ25zX21lbnVfZ29vZ2xlX2Rpc2FibGVkIiwic2hvcGVyX2NhbXBhaWduc19nb29nbGVfYXBwIiwic3BlY2lhbF9vZmZlcnNfc3RvY2tzX3YxIiwic3ZlX2VkaXRvcnMtYnJlYWRjcnVtYnMiLCJnYV9jYW1wYWlnbl9tb3ZlX2Zyb21fcGx1Z2lucyIsInN2ZV9ncmlkLWxhYmVscy12MiIsInBheW1lbnRzX2RlZmF1bHRfcGF5cG9fcHJvdmlkZXIiLCJzdG9yZWZyb250X3NvY2lhbF9sb2dpbiIsInN0b3JlZnJvbnRfc29jaWFsX2xvZ2luX2dvb2dsZSIsInN0b3JlZnJvbnRfc29jaWFsX2xvZ2luX2ZhY2Vib29rIiwicDI0X3BheW1lbnRfYXBwbGVfcGF5IiwicDI0X3BheW1lbnRfZ3BheSIsImZlYXR1cmVfZmxhZ3NfYWNrIiwic3RvcmVmcm9udF9sYW5ndWFnZXMiLCJzdG9yZWZyb250Iiwic3RvcmVmcm9udF9iZWxsX21lc3NhZ2UiLCJzdmVfbmV3LWNvbG9yLXBpY2tlciIsImZpbmFuY2luZ19uZXdfb2ZmZXIiLCJyZXR1cm5fcXVhbnRpdHlfdG9fc3RvY2tfYWZ0ZXJfY2FuY2VsZWRfb3JkZXIiLCJzaG9wZXJfY2FtcGFpZ25zX2Rpc2FibGVfc2hvcGVyX3RyYWZmaWMiLCJwYXltZW50X3AyNF9ncGF5X2FzeW5jIiwic2hvcGVyX2NhbXBhaWduc19tZW51X2ZhY2Vib29rX2Rpc2FibGVkIiwic2hvcGVyX2NhbXBhaWduc19mYWNlYm9va19hcHAiLCJzaG9wZXJfY2FtcGFpZ25zX21lbnVfY2FtcGFpZ25zX2Rpc2FibGVkIiwic3ZlX3ByZWRlZmluZWQtY29sdW1ucyIsInN0b3JlZnJvbnRfbWFjcm9zIiwic3RvcmVmcm9udF9tYWNyb3NfYWRkIiwic3RvcmVmcm9udF9tYWNyb3NfZWRpdCIsImltYWdlX2VkaXRvciIsInN0b3JlZnJvbnRfbWFjcm9zX2RlbGV0ZSIsImxpbWl0X3Byb2R1Y3RfaW1hZ2VzX2NvdW50X2FwaSIsIm1haWxfb3RwIiwiaW5wb3N0X3BheSIsInBheW1lbnRfYmxpazAiLCJwYXltZW50X3AyNF9kaXNjbGFpbWVyIiwic2tpbnN0b3JlX3NraW5fY29weSIsImFwcHN0b3JlX2xpbmtzX21ha2VfaW50ZXJuYWxseSIsInN2ZV9kdXBsaWNhdGlvbnMiLCJmYWNlYm9va19idXNpbmVzc19leHRlbnNpb25fc2ltcGxlX2dhbW1hIiwiZ2FsbGVyeV9saXN0IiwiYm1fb3ZlcndyaXRlX2FtbF9kYXRhIiwiaW5wb3N0X3BheV9jb2QiLCJtZXRhZmllbGRzX2JpbmQiLCJzdmVfcmVwZWF0ZXIiLCJzdmVfc3RydWN0dXJlLWRyYWdhbmRkcm9wIiwic3RvcmVmcm9udF9iYXNrZXRfbGlzdCIsInNwZWNpYWxfb2ZmZXJzX2RlZmF1bHRfc3RvY2tfZml4X2dhbW1hIiwic3BlY2lhbF9vZmZlcnNfcGVyY2VudGFnZSIsInNwZWNpYWxfb2ZmZXJzX21hbnVhbF9wcm9tbyIsInN0b3JlZnJvbnRfanNfbmV3Iiwic3RvcmVmcm9udF9qc19uZXdfc2F2ZSIsInN2ZV9ob3Qta2V5cyIsInNob3BpbG9fbmV3X21lbnUiLCJzaG9waWxvX2hpZGVfb2xkX21lbnUiLCJwZXJmb3JtYW5jZV9sb2FkX3JlcG9ydHMiLCJ0cmFmZmljX2xvYWRfYWdncmVnYXRvciIsIm1ldGFmaWVsZHNfY2FuX2Fzc2lnbl90b19hcHAiLCJwcm9kdWN0X29wdGlvbl9zZWxlY3Rfc3RydWN0X2FnZ3JlZ2F0ZV9kYXRhIiwiZmlsdGVyc19yZWZhY3RvciIsImdwc3JfcHJvZHVjdF9pbmZvcm1hdGlvbiIsImdwc3JfcHJvZHVjdF9pbmZvcm1hdGlvbl94bWwiLCJzdG9yZWZyb250X2dwc3IiLCJzdG9yZWZyb250X2VuYWJsZV90dXJib19wcmVmZXRjaCIsInBheW1lbnRfc2hvcGVyUDI0X2JlbGwiLCJwYXltZW50c19hdXRvcGF5X3ZhbGlkYXRlX2RvY3VtZW50X251bWJlciIsInN0b3JlZnJvbnRfZnVsbF9yZWdpc3RyYXRpb24iLCJzdG9yZWZyb250X2Jhc2tldF9oaWRlX2Nvc3RfcGVyX2NvdW50cnkiLCJ0YXNrX21haWxfc2VuZF9ieV9tYW5hZ2VyIiwicGF5bWVudF9jdXN0b21fbmFtZV9saW1pdCIsInN0b3JlZnJvbnRfbWFjcm9zX2hpc3Rvcnlfc2F2ZSIsInN0b3JlZnJvbnRfbWFjcm9zX2hpc3RvcnkiLCJzdG9yZWZyb250X21hY3Jvc19jYW5fYWNjZXNzX29yaWdpbmFsIiwicGF5bWVudHNfcDI0X2luc3RhbGxtZW50c19odWIiLCJzdG9yZWZyb250X2Z1bGxfcmVnaXN0cmF0aW9uX2ZvcmNlIiwicGF5bWVudHNfc3RyaXBlIiwiZXh0ZXJuYWxfaW50ZWdyYXRpb25zX2FwaV90b2tlbnNfZ2FtbWEiLCJhcGlfdG9rZW5zX2FkbWluX21hbmFnZV9nYW1tYSIsInNvYXBfYXBpX2F1dGhlbnRpY2F0ZV9ieV90b2tlbl9nYW1tYSIsImF1dG9fbmJwX3VwZGF0ZXNfZ2FtbWEiLCJzdG9ja19hZGRpdGlvbmFsX2NvZGVzX2lwYSIsInNwZl92YWxpZGF0aW9uX2dhbW1hIiwieG1sX2NhbXBhaWduc19rb2pvdHkiLCJpbnBvc3RfcGF5X3YyX3Vuc2V0IiwicGF5bWVudHNfcGF5bWVudF9jaGFubmVsc19uYW1lIiwiaW5wb3N0X3BheV9yZWZ1bmRzIiwiaW5wb3N0X3BheV92MiIsInBheW1lbnRzX3AyNF9pbnN0YWxsbWVudHNfaHViXzBfb2ZmZXIiLCJodHRwc19yZWRpcmVjdF8zMDgiLCJpbnBvc3RfcGF5X2dhbGxlcnkiLCJzaG9wZXJfc2hpcG1lbnRzX3Bob25lX3ByZWZpeF9rb2pvdHkiLCJwYXltZW50c19pbnBvc3RfcGF5X3NhdmVkX2tleSIsIm1ldGFmaWVsZHNfaGlkZV9zY29wZSIsImZpbGVfcm90YXRlX2tvam90eSIsImZpbHRlcl9vcHRpb25zX2F2YWlsYWJpbGl0eSIsInN0b3JlZnJvbnRfbmV3X3NjaGVtYV92YWxpZGF0aW9uIiwiZGJfdGFibGVfY29tcGFyZV9udW1lcmljX2RhdGFfdHlwZXMiLCJwcm9kdWN0X2VkaXRfZGF0ZV9nYW1tYSIsImV4dGVybmFsX3N5c3RlbV9ub3RpZmljYXRpb24iLCJhcHBzdG9yZV9hcHBsaWNhdGlvbl9yZWRpcmVjdCIsInN2ZV9jb2x1bW4tc3BsaXQiLCJmcm9hbGFfZWRpdG9yIiwibmJwX3RhYmxlX2JfdXBkYXRlc19rb2pvdHkiLCJwcm9kdWN0X2ltYWdlX3djYWdfa29qb3R5IiwiaW5saW5lX2VkaXRfdGV4dGFyZWFfa29qb3R5IiwidHJpYWxfbWFpbF9zZW5kaW5nX2Jsb2NrZWRfa29qb3R5IiwicGF5bWVudF9zdHJpcGVfdmVyaWZpY2F0aW9ucyIsInN3aWZ0X3Byb2R1Y3RfZ2Z4X25vX2NoZWNrIiwiYmlnZGF0YV9pbmRleF9wcm9kdWN0cyIsImJpZ2RhdGFfaW5kZXhfcHJvZHVjdHNfdmFyaWFudHMiLCJiaWdkYXRhX2luZGV4X3BhcmNlbHMiLCJiaWdkYXRhX2luZGV4X29yZGVycyIsImJpZ2RhdGFfaW5kZXhfb3JkZXJzX3Byb2R1Y3RzIiwiYmlnZGF0YV9pbmRleF9vcmRlcnNfdHJhbnNhY3Rpb25zIiwiZ3Bzcl9wcm9kdWN0X2luZm9ybWF0aW9uX3Bvc3RfZGVwbG95Iiwic3RmX2RlZmF1bHRfc29ydF9maXgiLCJmaWx0ZXJfcHJvZHVjdF9hdHRyaWJ1dGVzX3ZhbHVlc19pcGEiLCJhcHBzdG9yZV9uZXdfdXJsX2dlbmVyYXRpb25faXBhIiwiY2FjaGVfdGh1bWJuYWlsc19rb2pvdHkiLCJ3ZWJob29rc19mb3JfZXh0ZXJuYWxfcGF5bWVudHNfaXBhIiwiaW5wb3N0X3BheV9kZWJ1ZyIsInN0b3JlZnJvbnRfY29weV9za2luX2luX2JhY2tncm91bmQiLCJzdG9yZWZyb250X2ZpbHRlcnNfY2hlY2tzdW0iLCJmaWx0ZXJfb3B0aW9uc19hdmFpbGFiaWxpdHlfZml4X25vbl9zdG9jayIsInBheW1lbnRfcGF5cGFsZWNfbmV3X2J1dHRvbiIsImFyaWFfbGl2ZV9yd2QiLCJzdG9yZWZyb250X21vZHVsZXNfY29udGV4dHMiLCJpbnBvc3RfbmV3X2dlb3dpZGdldF9rb2pvdHkiLCJtaW5pbXVtX2NhcnRfdmFsdWVfZm9yX3NoaXBtZW50c19taW5fY29zdCIsInN2ZV93ZXN0Iiwic3ZlX3pvb20iLCJzdmVfZHJhZy13aG9sZS1ncmlkLWVsZW1lbnQiLCJzdmVfZ3JpZC1lbGVtZW50cy1jbGljay1hbmQtZWRpdCIsImRldl9zdmVfbmV3LWZvcm1zLWdyaWQiLCJkZXZfc3RvcmVmcm9udF9yZW1vdmVfbWFjcm8iLCJwYXltZW50c19wMjRfdG9wX3VwX2JhbGFuY2UiLCJkZXZfYmFza2V0X2lkIiwiZGV2X2ZpbHRlcl9vcHRpb25zX3N0b2NrX2ZpeCIsImZpbHRlcnNfZGlzYWJsZV9mdXp6eV9zZWFyY2giLCJhcHBsaWNhdGlvbnNfc3NvX2xvZ2luIiwiY29yZV9jdXJyZW5jeV9tZW1vcnlfY2FjaGUiLCJjb3JlX2VudGl0eV9yb3dfY2FjaGUiLCJjb3JlX3NraXBfYWRtaW5fbG9nc19mb3JfdXNlcm9ubGluZSIsImRldl9zdmVfcHJldmlldy1tb2RlIiwiZGV2X3N2ZV9pbWFnZS1iYWNrZ3JvdW5kIiwiZGV2X2JhY2tncm91bmRfaW1hZ2UiLCJiaWdkYXRhX2luZGV4X3NlYXJjaF9oaXN0b3J5IiwiYmlnZGF0YV9pbmRleF9zZXNzaW9ucyIsImRldl9yZWZlcmVyX2hvc3RfYW5hbHl6ZXIiLCJtZXJjaGFudF90cmFja2luZyIsInBheW1lbnRzX2FwX3ZlcmlmaWNhdGlvbl90cmFuc2ZlciIsImRldl9zeXN0ZW1faWNvbnMiLCJkZXZfc3RvcmVmcm9udF9zaW1wbGVfYmFza2V0X2FkZHJlc3MiLCJkZXZfc3ZlX3dlc3QtYnktZGVmYXVsdCIsImRldl9wcm9tb2NvZGVfY2FzZV9pbnNlbnNpdGl2ZSIsImRldl93ZWJob29rc195ZWFybHlfaW5kZXhpbmdfZWxhc3RpYyIsInBheW1lbnRzX2lucG9zdF9wYXlfdHJhbnNhY3Rpb25zX3NldHRsZW1lbnQiLCJwYXltZW50X2JsaWtsIiwiZGV2X2ltYWdlc191cGxvYWRzX3RvX2NvbGxlY3Rpb25zX2FuZF9jYXRlZ29yaWVzIiwiZGV2X3Zpc3VhbF9zdWJjYXRlZ29yaWVzIiwiZGV2X2Rpc2NvdW50c19maXgiLCJkZXZfY3NzX2NsYXNzX29uX2Zvcm1fZXJyb3JzIiwiZGV2X2Jhc2tldF91c2VfZG9tYWluX2xvY2FsZSIsImRldl9za2luc3RvcmVfaW1hZ2VfdmFsaWRhdG9yIiwiZGV2X3N2ZV9uZXctZm9ybXMtbW9kdWxlcyIsImRldl9zdmVfbmV3LWZvcm1zLXNldHRpbmdzIiwiZGV2X3N2ZV9yZXNpemFibGUtc2lkZWJhciIsImRldl9zdmVfd2VzdC1vbmx5Iiwic2hvcGVyX3Nzb19pbnRlZ3JhdGlvbiIsInBheW1lbnRzX2ZpbmFuY2luZ19kaXNhYmxlX2VyYmVvIiwiaW1hZ2VzX2NhY2hlX25hbWVfcmV2ZXJzYWwiLCJkZXZfcGF5bWVudF92aXNpYmlsaXR5X2Ftb3VudF9pcGEiLCJwYXltZW50c19leHRlcm5hbF9pZnJhbWVfaXBhIiwiZGV2X3NlYXJjaF9oaXN0b3J5X2luZGV4aW5nX2VsYXN0aWMiLCJzdG9yZWZyb250X2FkbWluX3ByZXZpZXdfaW5hY3RpdmVfcHJvZHVjdHMiLCJkZXZfcmVjb21tZW5kYXRpb25fbm9mb2xsb3ciLCJkZXZfc3RvcmVmcm9udF9wYW5lbF9jdXJyZW5jeSIsImRldl9maWx0ZXJfb3B0aW9uc190b19zdG9ja19vbmx5Iiwic2hvcGVyX3Nzb19zZW5kX2NoZWNrb3V0X2RhdGEiLCJzdG9yZWZyb250X3NvY2lhbF9sb2dpbl9zaG9wZXJfc3NvIiwicndkX3NvY2lhbF9sb2dpbl9zaG9wZXJfc3NvIiwic2hvcGVyX3Nzb19wcm92aWRlcnMiLCJkZXZfbm90X2NsZWFuX21hcF90cmVlIiwiZGV2X3N0Zl80NDc3IiwiZGV2X3BheXBhbGVjX2J1dHRvbl92aXNpYmlsaXR5Iiwic2hvcF9kaXNhYmxlX29uZV9kYXlfYWZ0ZXJfaG9saWRheSIsImRldl9mcm9udGFwaV9zd2l0Y2hfdHJhbnNsYXRpb25zIiwiYnVndHJhY2tlcl9lcyIsImRldl9zdmUtdG9nZ2xlLXNraW4tdHJlZS1lbGVtZW50cyIsImRldl9pbnBvc3RfcGF5X2J1dHRvbl92aXNpYmlsaXR5IiwiZGV2X2dhX3VzZXJfZGF0YV9maXgiLCJwYXltZW50X2dwYXlfZGJfY29uZmlnIiwicGF5bWVudHNfc3RyaXBlX2RlbGV0ZV9jb25maWd1cmF0aW9uIiwic3RvcmVmcm9udF9yZWdpc3RyYXRpb24iLCJzaG9wZXJfY2xpIiwicDI0X3BheW1lbnRfaGlkZV9ub25lX3Bsbl9wYXltZW50cyIsImRldl9ncHNyX2NvbnRhY3RfZm9ybV91cmwiLCJzdmUtd3lzaXd5Z19mcm9hbGEiLCJkZXZfc3ZlX2RhdGUtdGltZS1waWNrZXJzIiwiaW5wb3N0X2ludGVybmF0aW9uYWwiLCJkZXZfc2VsZWN0X3ZhcmlhbnRfd2lkdGhfZml4IiwiZGV2X3N0b3JlZnJvbnRfYmFza2V0X2dhdWdlcyIsImRldl9pbnRlcm5hdGlvbmFsX29yZGVyX2luZGljYXRvcnMiLCJwYXltZW50c19zdHJpcGVfcmVmdW5kc19mcm9tX3N0cmlwZSIsImRldl9zdmVfaG90LWVkZ2VzIiwiZGV2X2ludGVybmF0aW9uYWxfY3VzdG9tZXJfaW5kaWNhdG9ycyIsImRldl9zdmVfbW9kdWxlX3RyYW5zbGF0aW9ucyIsImRldl9uZXdfbGFuZ3VhZ2VfY29weWluZyIsImRldl9uYXRpdmVfbGFuZ19kaXNwbGF5IiwiZGV2X3N0b3JlZnJvbnRfZm9ybV9ob25leXBvdCIsInNob3Blcl9jYW1wYWlnbnNfZmFjZWJvb2tfZmVlZF9jYW1wYWlnbl9pZCIsInNob3Blcl9jYW1wYWlnbnNfb3JkZXJfZmlsdGVyX3JlZmFjdG9yIiwiYXBwbGljYXRpb25fcGF5bWVudF9zdXBwb3J0ZWRjdXJyZW5jaWVzX2lwYSIsImFwcGxpY2F0aW9uX3BheW1lbnRfc3VwcG9ydGVkY3VycmVuY2llc193aXRoX2RlZmF1bHRfaXBhIiwiZGV2X2ZpeF9mYmVfYmFza2V0X3ZhbHVlX3J3ZCIsImRldl9maXhfZmJlX2Jhc2tldF92YWx1ZV9zdG9yZWZyb250IiwiZGV2X2ZpeF9mYmVfcHVyY2hhc2VfdmFsdWVfcndkIiwiZGV2X2RpdmlzaW9uX2J5X3plcm9fZml4IiwiZGV2X2NoYW5nZV9lc19tYXhfaGl0c19zaXplX3VwX3RvXzEwMDAwIiwiZGV2X3ZpZGVvX2xhenlfbG9hZCIsInBheW1lbnRzX2ZpbmFuY2luZyIsInBheW1lbnRzX2ZpbmFuY2luZ195b3VsZW5kIiwicGF5bWVudHNfZmluYW5jaW5nX25lc3RfYml6bmVzdCIsInBheW1lbnRzX2ZpbmFuY2luZ19icnV0dG9fMiIsInBheW1lbnRzX2ZpbmFuY2luZ19icnV0dG8iLCJtZW51X25hdmlnYXRpb25fcndkIiwiZGV2X2ZpbHRlcnNfc3ViY2F0ZWdvcmllc193Y2FnIiwiZGV2X2J1bmRsZV93aXRoX3NhbWVfdmFyaWFudHNfZml4IiwiZGV2X2J1bmRsZV93aXRoX3NhbWVfdmFyaWFudHNfMl9maXgiLCJkZXZfc2VhcmNoX3BvcHVwX2ZpeGVzIiwiZGV2X2RlZmF1bHRfdmFyaWFudHNfZml4IiwiZGV2X3N2ZV9kZWZhdWx0X3ZhbHVlX251bGwiLCJkZXZfc3RvcmVmcm9udF9hYnNfZmlsdGVyIiwiZGV2X2ZhcV9qc29uX2xkIiwiZGV2X3N0b3JlZnJvbnRfbWVudV9vcHRpbWl6YXRpb24iLCJkZXZfdGFnX2xhYmVsX3JlZGVzaWduIiwiZGV2X2VtcHR5X2ZpbHRlcnNfZml4IiwiZGV2X2dyaWRfbW9iaWxlX3dyYXAiLCJkZXZfbGlzdF9kZXNjcmlwdGlvbl9wYWdpbmF0aW9uIiwiYXBwc3RvcmVfcHJpY2luZ19wYWNrYWdlcyIsInBheW1lbnRzX2F1dG9wYXlfZ3BheV90b2tlbiIsImRldl9naWZfc3dpZnRfcHJvZHVjdF9maXgiLCJkZXZfc2hvcGVyX3Nzb193d3ciLCJkZXZfc29jaWFsX3Byb3ZpZGVyc191c2VyX2NhY2hlIiwiZGV2X3N3YXBfYmFza2V0X2FuYWx5dGljc19ldmVudHMiLCJkZXZfc3RvcmVmcm9udF9iYXNrZXRfd2FyaWFudHNfZml4IiwiZGV2X2luY29ycmVjdF92YXJpYW50c19maXgiLCJkZXZfZml4X3dlYnBfdGh1bWJuYWlscyIsImRldl9yZXNlbmRfY29uZmlybV9yZWdpc3Rlcl9lbWFpbCIsInBheW1lbnRfcDI0X25ld19zZXR0aW5nc19wYXltZW50X2NoYW5uZWxzX3ZpZXciLCJkZXZfYnVuZGxlX3NlbGVjdF9maXgiLCJkZXZfZm9ybV9jb250YWluZXIiLCJkZXZfc3ZlX3JlcGVhdGVyX2RyYWdfYW5kX2Ryb3AiLCJkZXZfc3ZlX3JlcGVhdGVyX2VkaXRfbGFiZWwiLCJwYXltZW50c19wMjRfdG9wX3VwX2JhbGFuY2VfcGVyX2N1cnJlbmN5IiwiZGV2X3N0b3JlZnJvbnRfZG9udF9yZW5kZXJfd2hlbl9ub19jb250ZXh0IiwiZGV2X3NlbGVjdF9wbGFjZWhvbGRlciIsInN3aWZ0X3Byb2R1Y3RfZ2Z4X3dyaXRlIiwic3dpZnRfcHJvZHVjdF9nZnhfcmVhZCIsInN3aWZ0X3Byb2R1Y3RfZ2Z4X2ZzX2Rpc2FibGVkIiwiZGV2X2dlb2xvYyIsImRldl9nZW9sb2NfY3VycmVuY3lfcGFyYW1fZml4IiwiZGV2X3N2ZV9wb2ludF9waWNrZXIiLCJkZXZfc2Vzc2lvbl9tZXRyaWNzX29yZGVyX2ZpeCIsImRldl90YXNrX2hpc3RvcnlfdXBkYXRlIiwiZGV2X3N0b3JlZnJvbnRfY2F0Y2hfbW9kdWxlX3JlbmRlcl9lcnJvciIsImRldl9zdG9yZWZyb250X2NhdGNoX2V4Y2VwdGlvbl9pbl9vYmplY3RfYXBpIiwiZGV2X2lucG9zdF9kZWxpdmVyeV9tYWlsX3NoaXBtZW50IiwiZGV2X3N0b3JlZnJvbnRfdml0ZV9idWlsZCIsImRldl9vcHRpb25fZGlzcGxheV9maXgiLCJkZXZfZml4X3ZhcmlhbnRfcHJpY2VzIiwiZGV2X3NraW5zdG9yZV9wcmljaW5nIiwiZGV2X2NoZWNrX2lmX2xvY2FsZV9leGlzdHMiLCJkZXZfc3ZlX3Byb2plY3QtbWlncmF0aW9uIiwiZGV2X3Nlc3Npb25fYmFza2V0X2ZpeCIsImRldl9zdmVfdW5kb19yZWRvIiwiZGV2X3N0b3JlZnJvbnRfdmFsaWRhdGVfYmFza2V0X2lkIiwiZGV2X3N2ZV92YWxpZGF0ZV9tb2R1bGVfaHRtbCIsImRldl9zcGxpdF9hZGRpdGlvbmFsX3RheF9pbmZvIiwiZGV2X3N2ZV9wb2ludF9waWNrZXJfdjIiLCJkZXZfYWNjb3JkaW9uX2hlaWdodF9maXgiLCJkZXZfYWRkaXRpb25hbF9maWVsZHNfY2hhbmdlX29wdGltaXphdGlvbiIsImRldl9jb3Vwb25fY29kZXNfZml4IiwiZGV2X3NlYXJjaF9pY29uX2ZpeCIsImRldl9vcHRpb25zX2ZpbHRlcl9zZWxlY3QiLCJkZXZfcmVhY3RpdmVfc2VsZWN0ZWRfaW5kZXgiLCJkZXZfbmV3c2xldHRlcl9hdHRhY2htZW50c19saW1pdHMiLCJkZXZfZ29vZ2xlX2N1c3RvbWVyX3Jldmlld3Nfd2lkZ2V0X2ZpeCIsImRldl9zdGZfdXBncmFkZV9za2luX2ZpeCIsInBheW1lbnRzX3N0cmlwZV9kaXNhYmxlX2V4cHJlc3NfY2hlY2tvdXQiLCJkZXZfc3ZlX2RpdmlkZXIiLCJkZXZfY29yZV9oaWRlX2ZpbHRlcnMiLCJkZXZfcHJvcGFnYW5kYV9yZW1vdmVfZGF0YWxheWVyX25hbWUiLCJkZXZfc3ZlX3BlcmZfbW9kdWxlX2VkaXQiLCJzdG9yZWZyb250X29yZGVyX2luX3RyYW5zYWN0aW9uIiwiZGV2X3N0b3JlZnJvbnRfbW9kdWxlc19saXN0IiwiZGV2X2ZpbGVfc2l6ZV9saW1pdCIsImRldl9jdXN0b21faWNvbnNfZml4IiwiZGV2X29wdGlvbnNfc2VsZWN0bGlrZV9yZWZhY3RvciIsImRldl9zdmVfZWRpdGFibGVfbGFiZWwiLCJwYXltZW50c19hdXRvcGF5X29uYm9hcmRpbmdfdmVyaWZpY2F0aW9uIiwiZGV2X3NlYXJjaF80MDRfaGlzdG9yeV9maXgiLCJkZXZfc3RvcmVmcm9udF90dXJib19yZXN0b3JlX2xvYWRlZF9ldmVudCIsImRldl9wYXltZW50c19iYXNrZXRfc3RyaXBlX2NhcmRfc3RvcmVmcm9udCIsImRldl9pbnBvc3RfYnV5IiwiZGV2X3NlYXJjaF91eF9maXhlcyIsImRldl9jYWNoZV9zZWFyY2hfcHJvZHVjdHMiLCJkZXZfcHJpY2VfYnV5aW5nX25ldCIsImRldl9wYXltZW50c19iYXNrZXRfc3RyaXBlX2FwcGxlX3BheSIsImRldl9wcmVzZXJ2ZV93ZWJwX2FscGhhIiwiZGV2X2luYWN0aXZlX2luX29iamVjdF9hcGlfZml4IiwiZGV2X3N2ZV9wZXJzaXN0X3pvb21fZGV2aWNlIiwiZGV2X3N2ZV9wYXJlbnRfZm9yY2VkX2hpZGRlbl9pbmRpY2F0b3IiLCJiaWdkYXRhX3N0b2NrX2FmdGVyX29yZGVyX3BsYWNlZCIsImhlcm1lc19zaG9wZXJfaW5ob3VzZV9yZXR1cm5zX2FwcCIsImRldl9zd2lmdF9kZWxldGVfb2JqZWN0X2FzeW5jIiwiZGV2X2lucG9zdF9kZWxpdmVyeV9tYWlsIiwiYWRtaW5fc2tpbl9jaGFuZ2UiLCJkZXZfYWRtaW5fYW5hbHl0aWNzIiwiZGV2X2FkbWluX2Zvcm1fY2hhbmdlX2RldGVjdGlvbiIsImRldl9hZG1pbl9taXhwYW5lbF9hbmFseXRpY3NfY2xpZW50IiwiYWRtaW5fYW5hbHl0aWNzX2NzdiIsImFkbWluX2FuYWx5dGljc19lbmFibGVkIiwiYWRtaW5fYW5hbHl0aWNzX3JlcG9ydF9vcmRlcnNfc2FsZXMiLCJkZXZfYWRtaW5fc2lkZWJhcl9kYl9zdGF0ZV9zc3IiLCJkZXZfYXVyb3JhX2NvbG9yaW5nX2JlbGwiLCJkZXZfY2xhcml0eV9zd2l0Y2giLCJkZXZfZGFya19tb2RlX25vdmVsdHkiLCJkZXZfZ2lmdF9jYXJkc19zb29uIiwiZGV2X3JlcG9ydHNfbm92ZWx0eSIsIm5vbl9zdG9ja192YXJpYW50c19pcGEiLCJkZXZfYWRtaW5fYW5hbHl0aWNzX2FwcF9zdG9yZV9icm93c2UiLCJwYXltZW50c19zdHJpcGVfb25ib2FyZGluZ192ZXJpZmljYXRpb24iLCJkZXZfZnJlZV9vcmRlcnNfY3NyZl9maXgiLCJkZXZfc3ZlX3NvcnRhYmxlX2xpc3QiLCJkZXZfc3RmX3NvcnRfaXRlbXMiLCJkZXZfc3RvcmVmcm9udF9haV9zZW8iLCJkZXZfcGF5bWVudHNfYmFza2V0X3AyNF9hcHBsZV9wYXkiLCJkZXZfcGF5bWVudHNfYmFza2V0X2FwcGxlX3BheSIsImRldl9leHBvcnRfZmlsdGVyZWRfcHJvZHVjdHMiLCJkZXZfc3ZlX2luYWN0aXZlX2xhbmd1YWdlcyIsImNvZGVfbWlycm9yXzYiLCJkZXZfbW92ZV9HQTRfdG9fbW9kdWxlIiwiZGV2X2pvYl9xdWV1ZV9vcHRpbWl6YXRpb25zIiwiZGV2X3ByaWNlX2ZpbHRlcl9zb3J0X2RlZmF1bHRfc3RvY2tfb25seSIsImRldl9naWZ0X2NhcmRzX3BheW1lbnRfY2hlY2siLCJkZXZfZ2lmdF9jYXJkcyIsImRldl9wYXltZW50X2dpZnRfY2FyZCIsImRldl9jb25zZW50X21vZGVfaW5pdF9maXgiLCJkZXZfZnJvbnRfYXBpX3Byb2R1Y3RfbGlzdF9vcHRpbWl6YXRpb24iLCJkZXZfZnJvbnRfYXBpX3Byb2R1Y3RfbGlzdF9vcHRpbWl6YXRpb25fY2FjaGUiLCJkZXZfZnJvbnRfYXBpX3Byb2R1Y3RfbGlzdF90aW1lIiwiZGV2X2N1c3RvbV9mbWMiLCJkZXZfc2VvX2NhdGVnb3J5X2hlYWRpbmciLCJkZXZfc2VvX2NvbGxlY3Rpb25faGVhZGluZyIsImRldl9wYXltZW50c19wMjRfZ29wYXlfZ29vZ2xlcGF5X2luX2FsbF9jdXJyZW5jaWVzIiwiZGV2X2xveWFsdHlfZXhwaXJhdGlvbl90YXNrX29wdGltaXphdGlvbiIsImRldl9nb29nbGVfcmV2aWV3c19zdGlja3lfYmFyc19maXgiLCJkZXZfZHJvcGRvd25fZml0X3ZpZXdwb3J0X3Bvc2l0aW9uaW5nIiwiZGV2X2VuYWJsZV9hbmFseXRpY3NfZXZlbnRzX3dpdGhfcHJlZml4IiwiZGV2X2lucG9zdHBheV9uZXdfY3JlYXRlX2FjY291bnRfdXJsIiwiZGV2X25vdGlmaWNhdGlvbnMiLCJkZXZfc2xpZGVyX29wdGltaXphdGlvbiIsImRldl9oeWRyYXRpb25fYXR0cmlidXRlcyIsImRldl9oYW5kbGVfZmxhc2hfbWVzc2FnZSIsImRldl9maXhfbm90X3JlZ2lzdGVyZWRfaGVscGVyIiwiZGV2X2J1bmRsZV9mcm9udF9hcGkiLCJkZXZfc2VvX3JlZHVuZGFudF9oZWFkaW5ncyIsImRldl9zdGZfaW5zdGFsbF9za2luX2pvYiIsImRldl9tYXhfc2tpbl9zaXplIiwiZGV2X2lvc19jYWxsX2RldGVjdGlvbl9maXgiLCJkZXZfc3ZlX2xheW91dC1wZXItb2JqZWN0IiwiZGV2X3N2ZV9sYXlvdXQtcGVyLW9iamVjdC12MiIsImRldl9idWd0cmFja2VyX2VzX2FjbCIsImRldl9zdG9yZWZyb250X2FkZHJlc3NfZm9ybV9zYXZlIiwic2hvcGVyX2NhbXBhaWduc19oaXN0b3JpY2FsX3ByaWNlIiwic3RvcmVmcm9udF9maWxsX3N0b3JhZ2Vfc3RvY2tfb25fcGxhY2Vfb3JkZXIiLCJkZXZfZmVhdHVyZWRfcHJvZHVjdF91aV9maXhlcyIsImRldl9zZWFyY2hfZm9jdXNfdHJhcF9maXgiLCJjb21wYW55X3Byb2ZpbGVfZ29vZ2xlX3RheG9ub215IiwiZGV2X2tvam90eV9haV9hY3RfcGludHVyYSIsImRldl9zdG9yZWZyb250X3JvYm90c192MiIsImRldl9yd2RfcHJvZHVjdF9saXN0X3htbF9yZXF1ZXN0IiwiZGV2X3J3ZF94bWxfcmVxdWVzdF8yIiwiZGV2X3NlY3VyZV9lbmNvZGUiLCJkZXZfcndkX2Jhc2tldF94bWxfcmVxdWVzdCIsImRldl9wcm9kdWN0X3JhdGluZ19qc29ubGRfZml4IiwiZGV2X2NhY2hlZF9zZWxlY3Rfb3B0aW9ucyIsImRldl9jYWNoZV9maXgiLCJkZXZfZGF0YWJhc2VfcmVjb25uZWN0X2xpbWl0IiwiZGV2X3NzbF9pbmZvX3JlZmFjdG9yIiwiZGV2X21lbnVfbWFpbl9zZWN0aW9uX3JlZGlyZWN0IiwiZGV2X2pzb25sZF9nc2NfdXJsc19maXgiLCJkZXZfZm1jXzQwNF9zdGF0dXMiLCJkZXZfcndkX2J1bmRsZV9vcHRpb25zX2Jhc2tldCIsInN2ZV9kZXZfbW9kdWxlX3ByZXZpZXciLCJraWxsX2FsbGVncm8iLCJkZXZfcndkX3htbF9yZXF1ZXN0IiwicGF5bWVudHNfbmF0aW9uYWxfcGF5bWVudF9pbnN0aXR1dGlvbl9kaXNjbGFpbWVyIiwiZGV2X3NlYXJjaF9maXhlcyIsImRldl9maWx0ZXJzX21vYmlsZV9mb2N1c190cmFwIiwiZGV2X3Nlb19yd2RfZGF0YV91bmlmaWNhdGlvbiIsImRldl9yd2RfdXJsX2hlbHBlciIsImRldl9lbWFpbF9yZWRpcmVjdF9maXgiLCJkZXZfZmVlZF9qb2JfcXVldWUiLCJzdmVfZGV2X2R5bmFtaWNfZm9udHMiLCJkZXZfY2F0ZWdvcnlfdHJlZV9iYXRjaF9sb2FkIiwiZGV2X2Jhc2tldF9xdWV1ZV9zZXRfcHJpY2VfZ3JvdXAiLCJkZXZfc2tpbl9jb3B5X25ldyIsImRldl9hcnRpY2xlX2pzb25sZF9maXhlcyIsImRldl92YXRfZXVfdmlzaWJpbGl0eV9maXgiLCJkZXZfcmVjYXB0Y2hhX2ZpeCIsImRldl9yZWRpcmVjdHNfbG9va3VwX29wdGltaXphdGlvbiIsInN2ZV9kZXZfY29sdW1uX3Jlc2l6ZV9kcmFnIiwiZGV2X2V4dGVybmFsX3BheW1lbnRzX2Jhbm5lciIsImRldl9zZW9fcm9ib3RzIiwic3ZlX2Rldl9iYWNrZ3JvdW5kX2NvbG9yX3ZhcmlhYmxlIiwicGF5bWVudHNfcDI0X29uYm9hcmRpbmdfdmVyaWZpY2F0aW9uIiwiZGV2X3NlYXJjaF9jbG9zZV9hcmlhX2hpZGRlbl9maXgiLCJkZXZfcGhvZW5peF9sYXp5X2xvYWRlcl9vcHRpbWl6YXRpb24iLCJkZXZfYmlnZGF0YV9uZXdfZHVtcHNob3AiLCJkZXZfc3NvX2RlZmF1bHRfcGF5bWVudF9tZXRob2RfZml4IiwiZGV2X3VwZGF0ZV9tYWNybyIsImRldl9zZWxlY3Rfd2lkdGhfb3B0aW1pemF0aW9uIiwiZGV2X3JlY2FwdGNoYV9zb2NpYWxfcmVnaXN0ZXJfZml4IiwiZGV2X3F1ZXVlX3Byb2R1Y3Rfc29sZF9zdGF0cyIsImhhc2hlZF9jYWNoZV90YWdzIiwicmVjYXB0Y2hhX2FkbWluIiwiZGV2X3N2ZV9taXhwYW5lbCIsImRldl9hcHBzdG9yZV9jYXJkX2Jhbm5lciIsImRldl9kcm9wZG93bl9yZWZhY3RvciIsImRldl93ZWJhcGlfY2F0ZWdvcmllc190cmVlX2JhdGNoX2xvYWQiLCJkZXZfcmVkaXJlY3RzX3J1bGVzX2NhY2hlIiwiZGV2X2tvam90eV9zcGxpdF9idXR0b24iLCJkZXZfcm9ib19mb2xrc19tZW51IiwiZGV2X3JvYm9fZm9sa3NfbWVudV9ub3ZlbHR5IiwiZGV2X3BhZ2luYXRvcl9vcHRpbWl6YXRpb24iLCJkZXZfc3RvcmVmcm9udF9wYWdpbmF0b3JfMiIsInN0b3JlZnJvbnRfZGVmZXJfc3RvY2tfY2FjaGVfY2xlYW5fb25fcGxhY2Vfb3JkZXJfMiIsImFkbWluX2FuYWx5dGljc19yZXBvcnRfcHJlc2V0cyIsInN2ZV9kZXZfaW5saW5lX21vZHVsZV90ZXh0X2VkaXQiLCJkZXZfcmVwb3J0c19mcmVxdWVudGx5X3B1cmNoYXNlZF9ub3ZlbHR5IiwiYWRtaW5fYW5hbHl0aWNzX3JlcG9ydF9vcmRlcnNfcHJvZHVjdHMiLCJzdmVfZGV2X2dyaWRfY29ybmVyc19yYWRpdXMiLCJzd2lmdF9wcm9kdWN0X2dmeF9za2lwX3JlbmRlcl9jaGVjayIsImRldl9zdG9yZWZyb250X2xpc3RfaGFzX2F0X2xlYXN0IiwiZGV2X29yZGVyX3RpbWVsaW5lIiwiZGV2X2V4cG9ydF9wcm9kdWN0c19pbl9wcm9ncmVzc19iYXIiLCJzd2lmdF9wcm9kdWN0X2dmeF9za2lwX2hlYWQiLCJzdmVfZGV2X3N0b3JlZnJvbnRfbW9kdWxlX3JlaW5pdCIsInN2ZV9kZXZfc2tpbl9maWxlcyIsImpvYl9lc19oaXN0b3J5Il0=" data-ajaxbasket-mode="1">
+<meta name="robots" content="noindex, nofollow">
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Glow Code - podglad na Mance Studios</title>
+    <meta name="keywords" content="Kontakt,  sklep" />
+    <meta name="description" content="Kontakt" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <link rel="home" href="https://mancestudios.com/" />
+    <link rel="shortcut icon" href="https://mancestudios.com/skins/user/rwd_primary_29/images/favicon.png">
+        
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="preconnect" href="//fonts.gstatic.com">
+        <link rel="preconnect" href="https://dcsaascdn.net" crossorigin>
+    <link rel="preload" as="font" type="font/woff" href="https://mancestudios.com/skins/user/rwd_primary_29/images/rwd-custom.woff?gptqpz" crossorigin>
+    <link rel="preload" as="font" type="font/woff" href="https://mancestudios.com/skins/user/rwd_primary_29/images/fontawesome-webfont.woff?v=4.0.3" crossorigin>
+
+    
+    
+    <link id="csslink" rel="stylesheet" type="text/css" href="https://mancestudios.com/skins/user/rwd_primary_29/cache/sfc/MzI6NDgwOjUuMjYuNTc.css" />
+
+    
+    
+                    
+    
+                        <link rel="canonical" href="https://mancestudios.com/kontakt" />
+            
+        
+    
+<meta name="google-site-verification" content="ttWMuLSSWGr0F3B4FvVu2RbwDidEhE38rHoUZuamc_U" />
+<meta name="shoper_campaigns_analytics_measurment_id" content="G-EK1B3R41JH"/>
+    
+    
+<style>
+/* ===== TGC LANDING v2 (The Glow Code, strona informacyjna) =====
+   Wszystko zawezone do .tgc, zeby nie dotknac reszty sklepu.
+   Kompilator LESS Shopera: kazde "a / b", calc(), max() i kolor #RRGGBBAA w ....
+   Efekty ruchu wlacza klasa .tgc-js (dodawana w user.js); bez JS i przy
+   prefers-reduced-motion cala tresc jest widoczna statycznie. */
+@font-face { font-family: "TGC Inter Tight"; src: url("images/tgc-InterTight-400.ttf") format("truetype"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "TGC Inter Tight"; src: url("images/tgc-InterTight-500.ttf") format("truetype"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "TGC Inter Tight"; src: url("images/tgc-InterTight-Italic-400.ttf") format("truetype"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "TGC Inter Tight"; src: url("images/tgc-InterTight-Italic-500.ttf") format("truetype"); font-weight: 500; font-style: italic; font-display: swap; }
+
+.tgc {
+  --tgc-bg: #d4d4d6;
+  --tgc-soft: #dededf;
+  --tgc-paper: #ececed;
+  --tgc-ink: #161618;
+  --tgc-ink-2: #38383c;
+  --tgc-mute: #c8c8cc;
+  --tgc-line: #a5a5a7;
+  --tgc-line-dark: #4a4a4c;
+  --tgc-lime: #ccfa9c;
+  --tgc-lilac: #e49ffa;
+  --tgc-yellow: #f3fe95;
+  --tgc-mint: #92fede;
+  --tgc-pad: 40px;
+  --tgc-top: 72px;
+  position: relative;
+  display: block;
+  background: var(--tgc-bg);
+  color: var(--tgc-ink);
+  font-size: 20px;
+  line-height: 32px;
+  text-align: left;
+  overflow-x: clip;
+}
+.tgc, .tgc * { box-sizing: border-box; font-family: "TGC Inter Tight", "Helvetica Neue", Arial, sans-serif; letter-spacing: 0; }
+.tgc h1, .tgc h2, .tgc h3, .tgc p, .tgc ul, .tgc ol, .tgc li { margin: 0; padding: 0; }
+.tgc h1, .tgc h2, .tgc h3 { color: inherit; text-transform: none; font-weight: 400; }
+.tgc ul, .tgc ol { list-style: none; }
+.tgc img { display: block; max-width: 100%; height: auto; }
+.tgc a { color: inherit; text-decoration: none; }
+.tgc em { font-style: italic; font-weight: 500; }
+.tgc-nw { white-space: nowrap; }
+.tgc-wrap { position: relative; width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 var(--tgc-pad); }
+
+/* pasek postepu czytania */
+.tgc-progress { position: fixed; left: 0; right: 0; top: var(--tgc-top); z-index: 60; height: 4px; pointer-events: none; }
+.tgc-progress span { display: block; height: 100%; background: var(--tgc-ink); transform: scaleX(0); transform-origin: left center; }
+
+/* przyciski: wypelnienie wjezdza od dolu */
+.tgc-btn {
+  position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+  min-height: 60px; padding: 0 36px; overflow: hidden; isolation: isolate;
+  border: 2px solid var(--tgc-ink); border-radius: 1000px;
+  font-size: 20px; line-height: 24px; font-style: italic; font-weight: 500; text-transform: uppercase;
+  cursor: pointer; transition: color 300ms ease-out, transform 300ms ease-out;
+}
+.tgc-btn::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit;
+  transform: translateY(104%); transition: transform 400ms ease-out;
+}
+.tgc-btn:hover::before { transform: translateY(0); }
+.tgc .tgc-btn--solid { background: var(--tgc-ink); color: var(--tgc-lime); }
+.tgc .tgc-btn--solid::before { background: var(--tgc-lime); }
+.tgc .tgc-btn--solid:hover { color: var(--tgc-ink); }
+.tgc .tgc-btn--lime { background: var(--tgc-lime); color: var(--tgc-ink); border-color: var(--tgc-lime); }
+.tgc .tgc-btn--lime::before { background: var(--tgc-paper); }
+.tgc a:focus-visible, .tgc summary:focus-visible { outline: 2px solid var(--tgc-ink); outline-offset: 4px; }
+.tgc .tgc-bundle a:focus-visible, .tgc .tgc-buybar a:focus-visible { outline-color: var(--tgc-lime); }
+.tgc .tgc-link { display: inline-block; border-bottom: 2px solid currentColor; font-size: 16px; line-height: 24px; font-weight: 500; text-transform: uppercase; }
+.tgc .tgc-link:hover { font-style: italic; }
+
+.tgc .tgc-eyebrow {
+  display: inline-flex; align-items: center; gap: 12px; margin-bottom: 24px;
+  font-size: 16px; line-height: 20px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px;
+}
+.tgc-eyebrow::before { content: ""; width: 40px; height: 2px; background: currentColor; }
+.tgc .tgc-h2 { font-size: 64px; line-height: 76px; text-transform: uppercase; }
+.tgc .tgc-lead { max-width: 600px; font-size: 20px; line-height: 32px; color: var(--tgc-ink-2); }
+
+/* ---------- HERO ---------- */
+.tgc-hero { position: relative; padding: 32px 0 40px; overflow: hidden; }
+.tgc-orbs { position: absolute; inset: 0; pointer-events: none; transition: transform 800ms ease-out; }
+.tgc-orbs i { position: absolute; width: 560px; height: 560px; border-radius: 50%; filter: blur(48px); animation: tgc-drift 18s ease-in-out infinite alternate; }
+.tgc-orbs i:nth-child(1) { top: -120px; right: 8%; background: radial-gradient(circle, #ccfa9c 0%, #ccfa9c00 68%); }
+.tgc-orbs i:nth-child(2) { top: 160px; right: -160px; background: radial-gradient(circle, #e49ffa 0%, #e49ffa00 68%); animation-delay: -6s; }
+.tgc-orbs i:nth-child(3) { bottom: -240px; right: 28%; background: radial-gradient(circle, #92fede 0%, #92fede00 68%); animation-delay: -12s; }
+.tgc-orbs i:nth-child(4) { top: 40%; left: -280px; background: radial-gradient(circle, #f3fe95 0%, #f3fe9500 68%); animation-delay: -3s; }
+@keyframes tgc-drift {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(48px, -40px) scale(1); }
+  100% { transform: translate(-32px, 32px) scale(1); }
+}
+
+.tgc-hero__grid { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 48px; align-items: center; }
+.tgc-chip {
+  display: inline-flex; align-items: center; gap: 12px; margin-bottom: 20px; padding: 8px 16px 8px 12px;
+  border-radius: 1000px; background: var(--tgc-paper);
+  font-size: 16px; line-height: 20px; font-weight: 500; text-transform: uppercase;
+}
+.tgc-chip__dot { position: relative; width: 12px; height: 12px; border-radius: 50%; background: var(--tgc-ink); }
+.tgc-chip__dot::after { content: ""; position: absolute; inset: -4px; border-radius: 50%; border: 2px solid var(--tgc-ink); animation: tgc-ping 2000ms ease-out infinite; }
+@keyframes tgc-ping { 0% { transform: scale(1); opacity: 1; } 100% { transform: scale(2); opacity: 0; } }
+
+.tgc .tgc-hero__h1 { margin: 0 0 24px; line-height: 0; }
+.tgc-hero__logo-mask { display: block; width: 340px; }
+.tgc-hero__logo { width: 100%; animation: tgc-logo 1200ms ease-out 100ms both; }
+@keyframes tgc-logo {
+  0% { clip-path: inset(0 0 100% 0); transform: translateY(48px); }
+  100% { clip-path: inset(0 0 0 0); transform: translateY(0); }
+}
+.tgc .tgc-hero__lines { margin-bottom: 28px; font-size: 28px; line-height: 36px; text-transform: uppercase; }
+.tgc-line { display: block; overflow: hidden; padding-bottom: 8px; margin-bottom: -8px; }
+.tgc-line > span { display: inline-block; animation: tgc-rise 900ms ease-out both; animation-delay: calc(var(--d) * 120ms); }
+.tgc-in { animation: tgc-fade 900ms ease-out both; animation-delay: calc(var(--d) * 120ms); }
+@keyframes tgc-rise { 0% { transform: translateY(110%); } 100% { transform: translateY(0); } }
+@keyframes tgc-fade { 0% { opacity: 0; transform: translateY(24px); } 100% { opacity: 1; transform: translateY(0); } }
+
+.tgc-hero__buy { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; }
+.tgc-price { display: flex; flex-direction: column; }
+.tgc .tgc-hero__set { flex-basis: 100%; justify-self: start; margin-right: auto; max-width: max-content; }
+.tgc-price__val { font-size: 40px; line-height: 48px; font-style: italic; font-weight: 500; }
+.tgc-price__note { font-size: 16px; line-height: 24px; color: var(--tgc-ink-2); }
+.tgc .tgc-hero__trust { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: 28px; font-size: 16px; line-height: 24px; color: var(--tgc-ink-2); }
+.tgc-hero__trust li { display: inline-flex; align-items: center; gap: 8px; }
+.tgc-hero__trust li::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--tgc-ink); }
+
+/* scena z okladkami: tilt 3D za kursorem + wachlarz przy wejsciu */
+.tgc-stage { position: relative; height: 640px; perspective: 1200px; }
+.tgc-stage__inner {
+  position: absolute; inset: 0; transform-style: preserve-3d;
+  transform: rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)); transition: transform 400ms ease-out;
+}
+.tgc-stage__main, .tgc-stage__card {
+  position: absolute; top: 40px; left: 40px; width: 400px; border-radius: 4px 12px 12px 4px;
+  box-shadow: 0 40px 80px -32px #16161873, 0 8px 16px -8px #16161833;
+}
+.tgc-stage__main { z-index: 4; overflow: hidden; transform: rotate(-4deg) translateZ(40px); animation: tgc-main-in 1200ms ease-out 200ms both; }
+.tgc-stage__main img { width: 100%; }
+.tgc-stage__main::before {
+  content: ""; position: absolute; inset: 0 auto 0 0; z-index: 1; width: 16px;
+  background: linear-gradient(90deg, #16161833, #ffffff33 40%, #16161800);
+}
+.tgc-stage__shine {
+  position: absolute; inset: 0; z-index: 2; pointer-events: none;
+  background: linear-gradient(110deg, #ffffff00 36%, #ffffff66 48%, #ffffff00 60%);
+  transform: translateX(var(--sx, -100%)); transition: transform 400ms ease-out;
+}
+.tgc-stage__card { --x: 0px; --r: 0deg; transform: translateX(var(--x)) rotate(var(--r)); animation: tgc-fan-in 1400ms ease-out both; }
+.tgc-stage__card--2 { z-index: 3; --x: 72px; --r: 6deg; animation-delay: 700ms; }
+.tgc-stage__card--3 { z-index: 2; --x: 136px; --r: 14deg; animation-delay: 800ms; }
+.tgc-stage__card--4 { z-index: 1; --x: 192px; --r: 22deg; animation-delay: 900ms; }
+@keyframes tgc-fan-in { 0% { transform: translateX(0) rotate(-4deg); } 100% { transform: translateX(var(--x)) rotate(var(--r)); } }
+@keyframes tgc-main-in { 0% { opacity: 0; transform: translateY(64px) rotate(-12deg); } 100% { opacity: 1; transform: rotate(-4deg) translateZ(40px); } }
+
+.tgc-badge { position: absolute; left: 0; bottom: 32px; z-index: 6; width: 160px; height: 160px; animation: tgc-spin 24s linear infinite; }
+.tgc-badge__bg { fill: var(--tgc-lime); }
+.tgc-badge__core { fill: var(--tgc-ink); }
+.tgc-badge text { fill: var(--tgc-ink); font-size: 12px; font-weight: 500; font-style: italic; text-transform: uppercase; letter-spacing: 1px; }
+@keyframes tgc-spin { to { transform: rotate(360deg); } }
+
+.tgc-hero__foot { display: flex; align-items: center; justify-content: flex-end; gap: 24px; margin-top: 24px; }
+.tgc .tgc-scrollhint { display: inline-flex; flex-direction: column; align-items: center; gap: 8px; font-size: 12px; line-height: 16px; letter-spacing: 1px; text-transform: uppercase; }
+.tgc-scrollhint i { position: relative; display: block; width: 2px; height: 48px; overflow: hidden; background: var(--tgc-line); }
+.tgc-scrollhint i::after { content: ""; position: absolute; left: 0; top: 0; width: 2px; height: 16px; background: var(--tgc-ink); animation: tgc-hint 1600ms ease-in-out infinite; }
+@keyframes tgc-hint { 0% { transform: translateY(-16px); } 100% { transform: translateY(48px); } }
+
+/* ---------- PASEK HASEL (skos od predkosci scrolla) ---------- */
+.tgc-marquee { position: relative; z-index: 2; overflow: hidden; padding: 20px 0; background: var(--tgc-ink); transform: skewY(var(--tgc-skew, 0deg)); transition: transform 300ms ease-out; }
+.tgc-marquee__row { overflow: hidden; }
+.tgc-marquee__track { display: flex; width: max-content; animation: tgc-slide 36s linear infinite; }
+.tgc-marquee__row--rev .tgc-marquee__track { animation-direction: reverse; animation-duration: 44s; }
+.tgc-marquee__track span { padding-right: 48px; white-space: nowrap; color: var(--tgc-lime); font-size: 40px; line-height: 52px; font-style: italic; text-transform: uppercase; }
+.tgc-marquee__track span:nth-child(4n+2) { color: var(--tgc-lilac); }
+.tgc-marquee__track span:nth-child(4n+3) { color: var(--tgc-yellow); }
+.tgc-marquee__track span:nth-child(4n+4) { color: var(--tgc-mint); }
+.tgc-marquee__row--rev .tgc-marquee__track span { color: var(--tgc-paper); font-size: 20px; line-height: 32px; font-style: normal; }
+@keyframes tgc-slide { to { transform: translateX(-50%); } }
+
+/* ---------- LICZBY ---------- */
+.tgc-stats { padding: 120px 0 0; }
+.tgc-stats__panel { position: relative; padding: 72px 64px 128px; border-radius: 40px; background: var(--tgc-paper); }
+.tgc-stats__grid { position: relative; z-index: 1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; }
+.tgc .tgc-prop {
+  position: absolute; z-index: 2; width: 200px; border: 8px solid var(--tgc-paper); border-radius: 28px;
+  box-shadow: 0 24px 48px -24px #16161873; pointer-events: none;
+}
+.tgc .tgc-prop--bag { top: -96px; right: 48px; --rot: 6deg; }
+.tgc .tgc-prop--pan { bottom: -88px; left: -40px; width: 176px; --rot: -8deg; animation-delay: -3000ms; }
+[data-float] { transform: rotate(var(--rot, 0deg)); animation: tgc-float 6000ms ease-in-out infinite alternate; }
+@keyframes tgc-float {
+  0% { transform: translateY(0) rotate(var(--rot, 0deg)); }
+  100% { transform: translateY(-16px) rotate(var(--rot, 0deg)); }
+}
+.tgc-stat { display: flex; flex-direction: column; gap: 8px; padding-top: 24px; border-top: 2px solid var(--tgc-ink); }
+.tgc-stat b { white-space: nowrap; }
+.tgc-stat b { font-size: 80px; line-height: 88px; font-style: italic; font-weight: 500; }
+.tgc-stat > span { font-size: 16px; line-height: 24px; color: var(--tgc-ink-2); }
+
+/* ---------- SEKCJE ---------- */
+.tgc-sec { padding: 120px 0; }
+.tgc-sec--soft { background: var(--tgc-soft); }
+.tgc-sec--flush { padding-top: 0; }
+.tgc-head { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 48px; align-items: end; margin-bottom: 64px; }
+
+/* karty filarow nakladane przy scrollu */
+.tgc-stack { display: grid; gap: 32px; }
+.tgc-card {
+  position: sticky; display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 48px; align-items: center;
+  min-height: 480px; padding: 56px; border-radius: 32px; transform-origin: center top;
+  box-shadow: 0 -16px 48px -24px #16161840;
+}
+.tgc-card--1 { top: calc(var(--tgc-top) + 40px); background: var(--tgc-lime); }
+.tgc-card--2 { top: calc(var(--tgc-top) + 64px); background: var(--tgc-lilac); }
+.tgc-card--3 { top: calc(var(--tgc-top) + 88px); background: var(--tgc-mint); }
+.tgc-card__body { display: flex; flex-direction: column; gap: 20px; }
+.tgc-card__photo {
+  justify-self: end; width: 100%; max-width: 320px; aspect-ratio: 3 / 4; overflow: hidden;
+  border: 2px solid var(--tgc-ink); border-radius: 24px; transform: rotate(3deg);
+  box-shadow: 16px 16px 0 var(--tgc-ink);
+}
+.tgc-card--2 .tgc-card__photo { transform: rotate(-3deg); }
+.tgc .tgc-card__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
+.tgc-js .tgc-card__photo { opacity: 0; transform: translateY(48px) rotate(10deg); transition: opacity 900ms ease-out, transform 900ms ease-out; }
+.tgc-js .tgc-card.is-in .tgc-card__photo { opacity: 1; transform: rotate(3deg); }
+.tgc-js .tgc-card--2.is-in .tgc-card__photo { transform: rotate(-3deg); }
+.tgc-card__num { font-size: 16px; line-height: 24px; font-weight: 500; }
+.tgc .tgc-card__title { font-size: 88px; line-height: 104px; font-style: italic; font-weight: 500; text-transform: uppercase; }
+.tgc .tgc-card ul { display: grid; gap: 8px; padding-top: 20px; border-top: 2px solid var(--tgc-ink); font-size: 16px; line-height: 24px; }
+.tgc-card li::before { content: "+ "; }
+
+/* ---------- SERIA: poziomy scroll ---------- */
+.tgc-hs { --hs-bg: #e4fbcc; position: relative; background: var(--hs-bg); transition: background-color 600ms ease-out; }
+.tgc-hs[data-active="2"] { --hs-bg: #f1d3fb; }
+.tgc-hs[data-active="3"] { --hs-bg: #f8fdc8; }
+.tgc-hs[data-active="4"] { --hs-bg: #cbfdee; }
+.tgc-hs__sticky { display: flex; flex-direction: column; justify-content: center; gap: 48px; padding: 96px 0; overflow: hidden; }
+.tgc-hs.is-pinned .tgc-hs__sticky { position: sticky; top: var(--tgc-top); height: calc(100vh - var(--tgc-top)); padding: 48px 0; }
+.tgc-hs__head { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; }
+.tgc .tgc-hs__count { font-size: 20px; line-height: 28px; }
+.tgc-hs__count b { font-size: 48px; line-height: 56px; font-style: italic; font-weight: 500; }
+.tgc-hs__track {
+  display: flex; gap: 32px; width: max-content;
+  padding: 28px 120px 16px max(40px, calc((100vw - 1280px) / 2 + 40px));
+  will-change: transform;
+}
+.tgc-book {
+  display: grid; grid-template-columns: 280px 340px; gap: 32px; align-items: center;
+  padding: 24px; border-radius: 32px; background: var(--tgc-paper);
+  transition: transform 400ms ease-out;
+}
+.tgc-book__img { display: block; overflow: hidden; border-radius: 8px 16px 16px 8px; box-shadow: 0 24px 48px -24px #16161866; }
+.tgc-book__img img { width: 100%; transition: transform 600ms ease-out; }
+.tgc-book:hover .tgc-book__img img { transform: rotate(-2deg) translateY(-8px); }
+.tgc-book__info { display: flex; flex-direction: column; gap: 16px; }
+.tgc-book__tag {
+  align-self: flex-start; padding: 4px 12px; border-radius: 1000px; background: var(--tgc-lime);
+  font-size: 12px; line-height: 16px; font-style: italic; font-weight: 500; text-transform: uppercase;
+}
+.tgc-book[data-i="2"] .tgc-book__tag { background: var(--tgc-lilac); }
+.tgc-book[data-i="3"] .tgc-book__tag { background: var(--tgc-yellow); }
+.tgc-book[data-i="4"] .tgc-book__tag { background: var(--tgc-mint); }
+.tgc .tgc-book__title { font-size: 40px; line-height: 48px; font-style: italic; font-weight: 500; text-transform: uppercase; }
+.tgc .tgc-book p { font-size: 16px; line-height: 24px; color: var(--tgc-ink-2); }
+.tgc-book__foot { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 8px; }
+.tgc-book__price { font-size: 28px; line-height: 36px; font-style: italic; font-weight: 500; }
+.tgc .tgc-book .tgc-btn { min-height: 48px; padding: 0 28px; font-size: 16px; }
+/* karta pakietu na koncu serii */
+.tgc-deal {
+  position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 16px;
+  width: 440px; padding: 32px 40px 40px; border-radius: 32px; background: var(--tgc-ink); color: var(--tgc-paper);
+  animation: tgc-glow 2400ms ease-in-out infinite alternate;
+}
+@keyframes tgc-glow {
+  0% { box-shadow: 0 0 0 0 #ccfa9c00, 0 24px 48px -24px #16161899; }
+  100% { box-shadow: 0 0 0 8px #ccfa9c99, 0 24px 48px -24px #16161899; }
+}
+.tgc-deal__badge {
+  position: absolute; top: -20px; right: 32px; padding: 8px 20px; border-radius: 1000px;
+  background: var(--tgc-lime); color: var(--tgc-ink); border: 2px solid var(--tgc-ink); transform: rotate(4deg);
+  font-size: 16px; line-height: 20px; font-style: italic; font-weight: 500; text-transform: uppercase;
+}
+.tgc-deal__covers { position: relative; width: 100%; height: 188px; margin-bottom: 8px; }
+.tgc .tgc-deal__covers img {
+  position: absolute; top: 8px; left: 50%; width: 120px; margin-left: -60px; border-radius: 4px 8px 8px 4px;
+  box-shadow: 0 16px 32px -12px #000000b3; transition: transform 400ms ease-out;
+}
+.tgc-deal__covers img:nth-child(1) { transform: translateX(-108px) rotate(-12deg); }
+.tgc-deal__covers img:nth-child(2) { transform: translateX(-36px) rotate(-4deg) translateY(-8px); }
+.tgc-deal__covers img:nth-child(3) { transform: translateX(36px) rotate(4deg) translateY(-8px); }
+.tgc-deal__covers img:nth-child(4) { transform: translateX(108px) rotate(12deg); }
+.tgc-deal:hover .tgc-deal__covers img:nth-child(1) { transform: translateX(-124px) rotate(-16deg); }
+.tgc-deal:hover .tgc-deal__covers img:nth-child(4) { transform: translateX(124px) rotate(16deg); }
+.tgc .tgc-deal__title { font-size: 40px; line-height: 48px; text-transform: uppercase; }
+.tgc-deal__title em { color: var(--tgc-lime); }
+.tgc .tgc-deal__desc { font-size: 16px; line-height: 24px; color: var(--tgc-mute); }
+.tgc-deal__price { display: flex; align-items: baseline; gap: 12px; }
+.tgc-deal__price b { font-size: 40px; line-height: 48px; font-style: italic; font-weight: 500; color: var(--tgc-lime); }
+.tgc-deal__price span { font-size: 16px; line-height: 24px; color: var(--tgc-mute); }
+.tgc .tgc-deal .tgc-btn { align-self: stretch; }
+.tgc-hs__bar { height: 2px; background: var(--tgc-line); }
+.tgc-hs__bar span { display: block; height: 100%; background: var(--tgc-ink); transform: scaleX(0); transform-origin: left center; }
+
+/* ---------- PAKIET: panel rozszerza sie do pelnej szerokosci ---------- */
+.tgc-bundle { padding: 0; background: var(--tgc-bg); }
+.tgc-bundle__panel { padding: 120px 0; background: var(--tgc-ink); color: var(--tgc-paper); }
+.tgc-js .tgc-bundle__panel { clip-path: inset(var(--ci, 48px) round var(--cr, 48px)); }
+.tgc-bundle__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 64px; align-items: center; }
+.tgc-bundle .tgc-eyebrow { color: var(--tgc-lime); }
+.tgc-bundle .tgc-h2 { margin-bottom: 24px; }
+.tgc-bundle .tgc-h2 em { color: var(--tgc-lime); }
+.tgc .tgc-bundle .tgc-lead { margin-bottom: 40px; color: var(--tgc-mute); }
+.tgc .tgc-bundle__list { margin-bottom: 40px; border-top: 1px solid var(--tgc-line-dark); }
+.tgc-bundle__list li { display: flex; justify-content: space-between; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--tgc-line-dark); }
+.tgc-bundle__list li > span:first-child { font-style: italic; text-transform: uppercase; }
+.tgc-dot { display: inline-block; width: 12px; height: 12px; margin-right: 12px; border-radius: 50%; }
+.tgc-dot--1 { background: var(--tgc-lime); }
+.tgc-dot--2 { background: var(--tgc-lilac); }
+.tgc-dot--3 { background: var(--tgc-yellow); }
+.tgc-dot--4 { background: var(--tgc-mint); }
+.tgc-bundle__buy { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; }
+.tgc-bundle__buy .tgc-price__note { color: var(--tgc-mute); }
+.tgc-fan { --fp: 1; position: relative; height: 560px; }
+.tgc-fan img {
+  position: absolute; top: 40px; left: 50%; width: 280px; margin-left: -140px; border-radius: 4px 12px 12px 4px;
+  box-shadow: 0 32px 64px -16px #000000a6;
+}
+.tgc-fan img:nth-child(1) { transform: translateX(calc(var(--fp) * -68%)) rotate(calc(var(--fp) * -14deg)); }
+.tgc-fan img:nth-child(2) { transform: translateX(calc(var(--fp) * -24%)) rotate(calc(var(--fp) * -4deg)) translateY(calc(var(--fp) * -16px)); }
+.tgc-fan img:nth-child(3) { transform: translateX(calc(var(--fp) * 24%)) rotate(calc(var(--fp) * 4deg)) translateY(calc(var(--fp) * -8px)); }
+.tgc-fan img:nth-child(4) { transform: translateX(calc(var(--fp) * 68%)) rotate(calc(var(--fp) * 14deg)) translateY(calc(var(--fp) * 16px)); }
+
+/* ---------- AUTORKA ---------- */
+.tgc-author__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 96px; align-items: center; }
+.tgc-author__media { position: relative; padding-bottom: 64px; }
+.tgc-author__img { overflow: hidden; border-radius: 24px; }
+.tgc-author__img img { width: 100%; height: 100%; object-fit: cover; }
+.tgc-author__img--main { aspect-ratio: 3 / 4; }
+.tgc-author__img--main img { object-position: 50% 30%; }
+.tgc-author__img--small { position: absolute; right: -48px; bottom: 0; width: 44%; aspect-ratio: 3 / 4; border: 8px solid var(--tgc-bg); }
+.tgc-js .tgc-author__img { clip-path: inset(100% 0 0 0 round 24px); transition: clip-path 1400ms ease-out; }
+.tgc-js .tgc-author__img--small { transition-delay: 300ms; }
+.tgc-js .tgc-author__media.is-in .tgc-author__img { clip-path: inset(0 0 0 0 round 24px); }
+.tgc-author__sig {
+  position: absolute; left: 24px; bottom: 88px; padding: 8px 16px; border-radius: 1000px; background: var(--tgc-lime);
+  font-size: 16px; line-height: 24px; font-style: italic; font-weight: 500; text-transform: uppercase;
+}
+.tgc-author .tgc-h2 { margin-bottom: 32px; }
+.tgc .tgc-words { font-size: 32px; line-height: 44px; }
+.tgc-words .w { transition: color 200ms linear; }
+.tgc .tgc-author__note { margin-top: 24px; font-size: 16px; line-height: 24px; color: var(--tgc-ink-2); }
+.tgc-author__foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; margin-top: 40px; }
+.tgc .tgc-quote { padding-left: 24px; border-left: 4px solid var(--tgc-ink); font-size: 28px; line-height: 36px; font-style: italic; text-transform: uppercase; }
+
+/* ---------- PATRONAT ---------- */
+.tgc-expert { padding: 0 0 120px; }
+.tgc-expert__card { padding: 64px; border-radius: 40px; background: var(--tgc-mint); }
+.tgc-expert__top { display: grid; grid-template-columns: minmax(0, 1fr) 240px; gap: 48px; align-items: center; margin-bottom: 56px; }
+.tgc .tgc-expert__name { font-size: 80px; line-height: 92px; text-transform: uppercase; }
+.tgc .tgc-expert__role { margin: 4px 0 24px; font-size: 24px; line-height: 32px; font-style: italic; }
+.tgc .tgc-expert__lead { max-width: 640px; font-size: 20px; line-height: 32px; }
+.tgc-stamp { width: 240px; height: 240px; }
+.tgc-stamp__ring { fill: none; stroke: var(--tgc-ink); stroke-width: 2; }
+.tgc-stamp__spin { transform-origin: 100px 100px; animation: tgc-spin 28s linear infinite; }
+.tgc-stamp text { fill: var(--tgc-ink); font-size: 16px; font-weight: 500; letter-spacing: 2px; }
+.tgc-stamp__check { fill: none; stroke: var(--tgc-ink); stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+.tgc .tgc-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; counter-reset: none; }
+.tgc-step { display: flex; flex-direction: column; gap: 12px; padding-top: 24px; border-top: 2px solid var(--tgc-ink); }
+.tgc-step__n { font-size: 16px; line-height: 24px; font-weight: 500; }
+.tgc .tgc-step h3 { font-size: 24px; line-height: 32px; font-weight: 500; font-style: italic; text-transform: uppercase; }
+.tgc .tgc-step p { font-size: 16px; line-height: 24px; }
+.tgc .tgc-expert__disc { margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--tgc-ink); font-size: 16px; line-height: 24px; color: var(--tgc-ink-2); }
+
+/* ---------- DLA KOGO ---------- */
+.tgc-whosec { background: #f1d3fb; }
+.tgc-whosec__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 80px; align-items: center; }
+.tgc-whosec__art { position: relative; display: flex; justify-content: center; }
+.tgc-blob {
+  position: absolute; top: 8%; left: 4%; width: 92%; aspect-ratio: 1 / 1; border-radius: 48% 52% 44% 56%;
+  background: var(--tgc-lilac); animation: tgc-morph 12000ms ease-in-out infinite alternate;
+}
+@keyframes tgc-morph {
+  0% { border-radius: 48% 52% 44% 56%; transform: rotate(0deg); }
+  100% { border-radius: 56% 44% 52% 48%; transform: rotate(16deg); }
+}
+.tgc-whosec__photo {
+  position: relative; width: 100%; max-width: 420px; aspect-ratio: 3 / 4; overflow: hidden;
+  border-radius: 1000px 1000px 24px 24px; border: 2px solid var(--tgc-ink);
+}
+.tgc .tgc-whosec__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; }
+.tgc-whosec__tag {
+  position: absolute; left: 0; bottom: 48px; z-index: 2; padding: 12px 24px; border-radius: 1000px;
+  background: var(--tgc-lime); border: 2px solid var(--tgc-ink); transform: rotate(-6deg);
+  font-size: 20px; line-height: 24px; font-style: italic; font-weight: 500; text-transform: uppercase;
+}
+.tgc-whosec .tgc-h2 { margin-bottom: 40px; }
+.tgc .tgc-who { display: grid; grid-template-columns: minmax(0, 1fr); border-top: 2px solid var(--tgc-ink); }
+.tgc-who li { position: relative; display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 20px 16px 20px 0; border-bottom: 1px solid var(--tgc-ink); isolation: isolate; }
+.tgc-who li::before { content: ""; position: absolute; inset: 0 -16px; z-index: -1; background: var(--tgc-lime); transform: scaleX(0); transform-origin: left center; transition: transform 400ms ease-out; }
+.tgc-who li:hover::before { transform: scaleX(1); }
+.tgc-who li > span { min-width: 0; }
+.tgc-who li b { font-style: italic; font-weight: 500; }
+
+/* ---------- JAK TO DZIALA ---------- */
+.tgc-get { background: var(--tgc-yellow); }
+.tgc-get__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 64px; align-items: center; }
+.tgc-get__intro { display: flex; flex-direction: column; gap: 48px; }
+.tgc-phone {
+  position: relative; flex: none; align-self: center; width: 248px; height: 512px; padding: 12px; border-radius: 44px;
+  background: var(--tgc-ink); box-shadow: 0 40px 80px -32px #16161880; --rot: -6deg;
+}
+.tgc-phone__screen { position: relative; height: 100%; overflow: hidden; border-radius: 32px; background: var(--tgc-paper); }
+.tgc .tgc-phone__screen img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 0; }
+.tgc-phone__bar { position: absolute; top: 12px; left: 50%; z-index: 1; width: 80px; height: 24px; margin-left: -40px; border-radius: 1000px; background: var(--tgc-ink); }
+.tgc-phone__chip {
+  position: absolute; left: -56px; bottom: 64px; padding: 12px 20px; border-radius: 1000px;
+  background: var(--tgc-lime); border: 2px solid var(--tgc-ink); transform: rotate(6deg);
+  font-size: 16px; line-height: 20px; font-weight: 500; white-space: nowrap;
+}
+.tgc .tgc-flow { display: grid; gap: 0; }
+.tgc-flow li { display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 24px; align-items: center; padding: 28px 0; border-bottom: 2px solid var(--tgc-ink); }
+.tgc .tgc-flow { border-top: 2px solid var(--tgc-ink); }
+.tgc-flow b {
+  display: flex; align-items: center; justify-content: center; width: 72px; height: 72px; border-radius: 50%;
+  background: var(--tgc-ink); color: var(--tgc-lime); font-size: 32px; line-height: 40px; font-style: italic; font-weight: 500;
+}
+.tgc-flow strong { display: block; font-weight: 500; text-transform: uppercase; }
+.tgc-flow li > span { color: var(--tgc-ink-2); }
+
+/* ---------- FAQ ---------- */
+.tgc-faq { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 64px; }
+.tgc-faq__side { display: flex; flex-direction: column; gap: 40px; align-self: start; position: sticky; top: calc(var(--tgc-top) + 40px); }
+.tgc-help { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; padding: 28px; border-radius: 24px; background: var(--tgc-paper); }
+.tgc .tgc-help__img { width: 72px; height: 72px; margin-bottom: 8px; border-radius: 50%; border: 2px solid var(--tgc-ink); object-fit: cover; }
+.tgc .tgc-help__t { font-size: 24px; line-height: 32px; font-style: italic; font-weight: 500; text-transform: uppercase; }
+.tgc .tgc-help__d { margin-bottom: 8px; font-size: 16px; line-height: 24px; color: var(--tgc-ink-2); }
+.tgc-faq__list { border-top: 2px solid var(--tgc-ink); }
+.tgc-faq details { border-bottom: 1px solid var(--tgc-line); }
+.tgc-faq summary {
+  display: flex; justify-content: space-between; align-items: center; gap: 24px;
+  padding: 24px 0; cursor: pointer; list-style: none; font-size: 24px; line-height: 32px; font-weight: 500;
+}
+.tgc-faq summary::-webkit-details-marker { display: none; }
+.tgc-faq summary::after { content: "+"; flex: none; font-size: 32px; line-height: 32px; font-weight: 400; transition: transform 300ms ease-out; }
+.tgc-faq details[open] summary::after { transform: rotate(45deg); }
+.tgc-faq__a { overflow: hidden; }
+.tgc .tgc-faq__a p { padding: 0 64px 28px 0; color: var(--tgc-ink-2); }
+
+/* ---------- FINAL ---------- */
+.tgc-final { position: relative; overflow: hidden; padding: 160px 0; background: var(--tgc-lime); text-align: center; }
+.tgc-orbs--final i:nth-child(1) { top: -200px; left: -120px; right: auto; background: radial-gradient(circle, #e49ffa 0%, #e49ffa00 68%); }
+.tgc-orbs--final i:nth-child(2) { top: 40%; right: -200px; background: radial-gradient(circle, #92fede 0%, #92fede00 68%); }
+.tgc-orbs--final i:nth-child(3) { bottom: -280px; left: 36%; right: auto; background: radial-gradient(circle, #f3fe95 0%, #f3fe9500 68%); }
+.tgc-final__in { display: flex; flex-direction: column; align-items: center; gap: 32px; }
+.tgc .tgc-final__title { font-size: 128px; line-height: 144px; text-transform: uppercase; }
+.tgc .tgc-final .tgc-lead { margin: 0 auto; color: var(--tgc-ink); }
+.tgc .tgc-final .tgc-btn--solid::before { background: var(--tgc-paper); }
+
+/* pusty pas .bottom-footer motywu miedzy landingiem a stopka */
+body:has(.tgc) .bottom-footer { display: none; }
+body:has(.tgc) footer.mnc-foot { margin-top: 0; }
+
+/* ---------- pasek zakupu na telefonie ---------- */
+.tgc-buybar {
+  position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 50;
+  display: none; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 8px 8px 8px 20px; border-radius: 1000px; background: var(--tgc-ink); color: var(--tgc-paper);
+  box-shadow: 0 16px 32px -8px #16161880;
+  transform: translateY(120px); transition: transform 300ms ease-out;
+}
+.tgc-buybar.is-on { transform: translateY(0); }
+.tgc-buybar__t { display: flex; flex-direction: column; }
+.tgc-buybar__t b { font-size: 16px; line-height: 20px; font-style: italic; font-weight: 500; text-transform: uppercase; }
+.tgc-buybar__t span { font-size: 16px; line-height: 20px; color: var(--tgc-mute); }
+.tgc .tgc-buybar .tgc-btn { min-height: 48px; padding: 0 24px; font-size: 16px; }
+
+/* ---------- wejscie elementow przy scrollu ---------- */
+.tgc-js .tgc-rv { opacity: 0; transform: translateY(32px); transition: opacity 800ms ease-out, transform 800ms ease-out; }
+.tgc-js .tgc-rv.is-in { opacity: 1; transform: none; }
+
+@media (max-width: 1100px) {
+  .tgc .tgc-h2 { font-size: 52px; line-height: 64px; }
+  .tgc-hero__logo-mask { width: 300px; }
+  .tgc-stage { height: 520px; }
+  .tgc-stage__main, .tgc-stage__card { width: 320px; left: 16px; }
+  .tgc-stage__card--2 { --x: 56px; }
+  .tgc-stage__card--3 { --x: 104px; }
+  .tgc-stage__card--4 { --x: 148px; }
+  .tgc-whosec__grid { gap: 48px; }
+  .tgc .tgc-card__title { font-size: 64px; line-height: 76px; }
+  .tgc .tgc-final__title { font-size: 88px; line-height: 104px; }
+  .tgc .tgc-expert__name { font-size: 56px; line-height: 68px; }
+  .tgc .tgc-steps { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+}
+
+@media (max-width: 860px) {
+  .tgc-deal { flex: 0 0 300px; width: 300px; padding: 28px 24px 24px; border-radius: 24px; scroll-snap-align: start; }
+  .tgc-deal__badge { right: 16px; }
+  .tgc-deal__covers { height: 140px; }
+  .tgc .tgc-deal__covers img { width: 88px; margin-left: -44px; }
+  .tgc-deal__covers img:nth-child(1) { transform: translateX(-80px) rotate(-12deg); }
+  .tgc-deal__covers img:nth-child(2) { transform: translateX(-28px) rotate(-4deg) translateY(-8px); }
+  .tgc-deal__covers img:nth-child(3) { transform: translateX(28px) rotate(4deg) translateY(-8px); }
+  .tgc-deal__covers img:nth-child(4) { transform: translateX(80px) rotate(12deg); }
+  .tgc .tgc-deal__title { font-size: 28px; line-height: 36px; }
+  .tgc-deal__price b { font-size: 32px; line-height: 40px; }
+  .tgc .tgc-prop { width: 120px; border-width: 4px; border-radius: 20px; }
+  .tgc .tgc-prop--bag { top: -64px; right: 8px; }
+  .tgc .tgc-prop--pan { bottom: -40px; left: auto; right: 8px; width: 104px; }
+  .tgc-card__photo { order: -1; justify-self: start; max-width: 160px; box-shadow: 8px 8px 0 var(--tgc-ink); border-radius: 16px; }
+  .tgc-whosec__photo { max-width: 280px; }
+  .tgc-whosec__tag { left: 8px; bottom: 32px; font-size: 16px; line-height: 20px; }
+  .tgc-phone { width: 128px; height: 264px; margin-right: 12px; padding: 8px; border-radius: 28px; }
+  .tgc-phone__screen { border-radius: 20px; }
+  .tgc-phone__bar { top: 8px; width: 40px; height: 12px; margin-left: -20px; }
+  .tgc-phone__chip { display: none; }
+  .tgc { --tgc-pad: 16px; font-size: 16px; line-height: 24px; }
+  .tgc-hero { padding: 24px 0 40px; }
+  .tgc-orbs i { width: 360px; height: 360px; }
+  .tgc-hero__grid { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .tgc-hero__copy { display: contents; }
+  .tgc-chip { order: 1; margin: 0; justify-self: start; font-size: 12px; line-height: 16px; }
+  .tgc .tgc-hero__h1 { order: 2; margin: 0; }
+  .tgc-hero__logo-mask { width: 240px; }
+  .tgc .tgc-hero__lines { order: 3; margin: 0; font-size: 20px; line-height: 28px; }
+  .tgc-hero__buy { order: 4; }
+  .tgc .tgc-hero__buy .tgc-btn { width: 100%; }
+  .tgc .tgc-hero__trust { order: 5; margin: 0; flex-direction: column; gap: 4px; font-size: 16px; line-height: 24px; }
+  .tgc-stage { order: 6; height: 420px; margin-top: 8px; }
+  .tgc-stage__main, .tgc-stage__card { top: 24px; left: 12px; width: 220px; }
+  .tgc-stage__card--2 { --x: 40px; }
+  .tgc-stage__card--3 { --x: 76px; }
+  .tgc-stage__card--4 { --x: 108px; }
+  .tgc-badge { left: auto; right: 0; bottom: 8px; width: 112px; height: 112px; }
+  .tgc-hero__foot { margin-top: 0; }
+  .tgc .tgc-scrollhint { display: none; }
+  .tgc-price__val { font-size: 32px; line-height: 40px; }
+
+  .tgc-marquee { padding: 12px 0; }
+  .tgc-marquee__track span { padding-right: 28px; font-size: 24px; line-height: 32px; }
+  .tgc-marquee__row--rev .tgc-marquee__track span { font-size: 16px; line-height: 24px; }
+
+  .tgc-stats { padding-top: 96px; }
+  .tgc-stats__panel { padding: 48px 24px 96px; border-radius: 24px; }
+  .tgc-stats__grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .tgc-stat b { font-size: 48px; line-height: 56px; }
+
+  .tgc-sec { padding: 72px 0; }
+  .tgc-sec--flush { padding-top: 0; }
+  .tgc .tgc-h2 { font-size: 36px; line-height: 44px; }
+  .tgc .tgc-lead { font-size: 20px; line-height: 28px; }
+  .tgc-head { grid-template-columns: minmax(0, 1fr); gap: 20px; margin-bottom: 40px; }
+  .tgc .tgc-eyebrow { margin-bottom: 16px; }
+
+  .tgc-stack { gap: 20px; }
+  .tgc-card { grid-template-columns: minmax(0, 1fr); gap: 16px; min-height: 0; padding: 28px 24px; border-radius: 24px; }
+  .tgc-card--1 { top: calc(var(--tgc-top) + 16px); }
+  .tgc-card--2 { top: calc(var(--tgc-top) + 32px); }
+  .tgc-card--3 { top: calc(var(--tgc-top) + 48px); }
+  .tgc .tgc-card__title { font-size: 44px; line-height: 52px; }
+
+  .tgc-hs__sticky { gap: 32px; padding: 72px 0; }
+  .tgc-hs__count { display: none; }
+  .tgc-hs__track {
+    width: auto; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none;
+    padding: 28px 16px 16px; margin-top: -28px;
+  }
+  .tgc-hs__track::-webkit-scrollbar { display: none; }
+  .tgc-book { flex: 0 0 280px; grid-template-columns: minmax(0, 1fr); gap: 16px; padding: 16px 16px 24px; border-radius: 24px; scroll-snap-align: start; }
+  .tgc-book__info { padding: 0 8px; }
+  .tgc .tgc-book__title { font-size: 28px; line-height: 36px; }
+  .tgc-hs__bar { display: none; }
+
+  .tgc-bundle__panel { padding: 72px 0; }
+  .tgc-js .tgc-bundle__panel { clip-path: inset(var(--ci, 16px) round var(--cr, 24px)); }
+  .tgc-bundle__grid { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .tgc-fan { order: -1; height: 260px; }
+  .tgc-fan img { top: 24px; width: 136px; margin-left: -68px; }
+  .tgc .tgc-bundle__buy .tgc-btn { width: 100%; }
+
+  .tgc-author__grid { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  .tgc-author__media { margin-right: 32px; padding-bottom: 48px; }
+  .tgc-author__img--small { right: -32px; width: 44%; border-width: 4px; }
+  .tgc-author__sig { bottom: 64px; left: 16px; }
+  .tgc .tgc-words { font-size: 24px; line-height: 32px; }
+  .tgc .tgc-quote { font-size: 20px; line-height: 28px; }
+
+  .tgc-expert { padding-bottom: 72px; }
+  .tgc-expert__card { padding: 32px 24px; border-radius: 24px; }
+  .tgc-expert__top { grid-template-columns: minmax(0, 1fr); gap: 24px; margin-bottom: 40px; }
+  .tgc-stamp { order: -1; width: 144px; height: 144px; }
+  .tgc .tgc-expert__name { font-size: 40px; line-height: 48px; }
+  .tgc .tgc-expert__role { font-size: 20px; line-height: 28px; }
+
+  .tgc-whosec__grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .tgc-whosec .tgc-h2 { margin-bottom: 24px; }
+  .tgc-who li { grid-template-columns: 40px minmax(0, 1fr); padding: 20px 0; font-size: 20px; line-height: 28px; }
+
+  .tgc-get__grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .tgc-get__intro { flex-direction: row; align-items: flex-end; justify-content: space-between; }
+  .tgc-get__intro .tgc-eyebrow { white-space: nowrap; }
+  .tgc-flow li { grid-template-columns: 56px minmax(0, 1fr); gap: 16px; }
+  .tgc-flow b { width: 56px; height: 56px; font-size: 24px; line-height: 32px; }
+
+  .tgc-faq { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .tgc-faq__side { position: static; gap: 24px; }
+  .tgc-help { order: 2; flex-direction: row; flex-wrap: wrap; align-items: center; padding: 20px; }
+  .tgc .tgc-help__img { width: 56px; height: 56px; margin: 0; }
+  .tgc-faq summary { padding: 20px 0; font-size: 20px; line-height: 28px; }
+  .tgc .tgc-faq__a p { padding-right: 0; }
+
+  .tgc-final { padding: 96px 0 128px; }
+  .tgc .tgc-final__title { font-size: 48px; line-height: 56px; }
+  .tgc .tgc-final .tgc-btn { width: 100%; }
+
+  .tgc-buybar { display: flex; }
+  /* koszyk FAB Mance zaslanialby pasek zakupu - na landingu zostaje ikona koszyka w headerze */
+  body:has(.tgc) .mnc-fab { display: none; }
+}
+
+@media (max-width: 380px) {
+  .tgc-hero__logo-mask { width: 220px; }
+  .tgc .tgc-h2 { font-size: 32px; line-height: 40px; }
+  .tgc .tgc-final__title { font-size: 40px; line-height: 48px; }
+  .tgc-stat b { font-size: 40px; line-height: 48px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tgc *, .tgc *::before, .tgc *::after { animation: none !important; transition: none !important; }
+  .tgc .tgc-rv { opacity: 1; transform: none; }
+  .tgc .tgc-author__img, .tgc .tgc-bundle__panel { clip-path: none; }
+}
+/* ===== /TGC LANDING v2 ===== */
+
+.mnc-preloader { display: none !important; }
+
+</style>
+</head><body id="shop_infopage9" class="shop_infopage">
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true" focusable="false"><symbol id="mnc-logo" viewBox="0 0 746.8 72.8"><g fill="currentColor"><path d="M 13.4 70.93 L 0 70.93 L 0 2.1 L 20.92 2.1 L 33.44 56.22 L 45.86 2.1 L 66.54 2.1 L 66.54 70.93 L 53.14 70.93 L 53.14 24.38 C 53.14 23.04 53.16 21.16 53.19 18.75 C 53.22 16.34 53.23 14.48 53.23 13.17 L 40.21 70.93 L 26.24 70.93 L 13.31 13.17 C 13.31 14.48 13.32 16.34 13.36 18.75 C 13.39 21.16 13.4 23.04 13.4 24.38 Z M 13.4 70.93"/><path d="M 135.56 70.93 L 121.18 70.93 L 93.07 22.04 L 93.07 70.93 L 79.66 70.93 L 79.66 2.1 L 94.75 2.1 L 122.16 50.15 L 122.16 2.1 L 135.56 2.1 Z M 135.56 70.93"/><path d="M 197.53 65.8 C 192.39 70.5 185.82 72.85 177.82 72.85 C 167.93 72.85 160.14 69.67 154.48 63.32 C 148.81 56.94 145.98 48.19 145.98 37.08 C 145.98 25.06 149.2 15.8 155.64 9.29 C 161.25 3.63 168.38 0.79 177.03 0.79 C 188.61 0.79 197.08 4.59 202.43 12.19 C 205.39 16.45 206.98 20.73 207.2 25.03 L 192.81 25.03 C 191.88 21.73 190.68 19.24 189.22 17.56 C 186.6 14.57 182.73 13.07 177.59 13.07 C 172.36 13.07 168.23 15.18 165.21 19.4 C 162.2 23.62 160.69 29.59 160.69 37.31 C 160.69 45.03 162.28 50.82 165.47 54.66 C 168.66 58.5 172.72 60.43 177.64 60.43 C 182.68 60.43 186.52 58.78 189.17 55.48 C 190.63 53.7 191.85 51.04 192.81 47.49 L 207.05 47.49 C 205.81 55 202.64 61.1 197.53 65.8"/><path d="M 269.59 60.99 C 272.98 60.99 275.73 60.61 277.85 59.87 C 281.87 58.43 283.88 55.77 283.88 51.88 C 283.88 49.61 282.88 47.85 280.89 46.61 C 278.89 45.39 275.77 44.32 271.5 43.38 L 264.21 41.75 C 257.05 40.13 252.1 38.37 249.36 36.47 C 244.73 33.3 242.41 28.33 242.41 21.57 C 242.41 15.41 244.65 10.29 249.13 6.21 C 253.61 2.13 260.2 0.09 268.88 0.09 C 276.14 0.09 282.32 2.02 287.45 5.86 C 292.57 9.71 295.25 15.29 295.5 22.6 L 281.68 22.6 C 281.43 18.46 279.62 15.52 276.26 13.78 C 274.02 12.62 271.23 12.05 267.9 12.05 C 264.2 12.05 261.24 12.8 259.03 14.29 C 256.82 15.79 255.71 17.87 255.71 20.55 C 255.71 23.01 256.8 24.84 258.98 26.06 C 260.39 26.87 263.38 27.82 267.95 28.91 L 279.81 31.75 C 285.01 33 288.93 34.66 291.58 36.75 C 295.69 39.99 297.74 44.68 297.74 50.81 C 297.74 57.1 295.34 62.32 290.53 66.48 C 285.72 70.63 278.93 72.71 270.14 72.71 C 261.18 72.71 254.13 70.66 248.99 66.57 C 243.86 62.48 241.29 56.85 241.29 49.69 L 255.02 49.69 C 255.45 52.83 256.3 55.18 257.58 56.74 C 259.92 59.57 263.92 60.99 269.59 60.99"/><path d="M 358.4 2.1 L 358.4 14.29 L 337.81 14.29 L 337.81 70.93 L 323.34 70.93 L 323.34 14.29 L 302.65 14.29 L 302.65 2.1 Z M 358.4 2.1"/><path d="M 407.53 44.41 L 407.53 2.1 L 422.14 2.1 L 422.14 44.41 C 422.14 51.73 421.01 57.42 418.74 61.5 C 414.5 68.97 406.43 72.71 394.5 72.71 C 382.58 72.71 374.48 68.97 370.22 61.5 C 367.95 57.42 366.81 51.73 366.81 44.41 L 366.81 2.1 L 381.43 2.1 L 381.43 44.41 C 381.43 49.14 381.99 52.6 383.11 54.78 C 384.85 58.64 388.65 60.57 394.5 60.57 C 400.32 60.57 404.11 58.64 405.85 54.78 C 406.97 52.6 407.53 49.14 407.53 44.41"/><path d="M 476.22 19.66 C 474.01 15.93 469.64 14.06 463.1 14.06 L 449.84 14.06 L 449.84 58.98 L 463.1 58.98 C 469.89 58.98 474.62 55.63 477.3 48.94 C 478.76 45.27 479.49 40.89 479.49 35.82 C 479.49 28.81 478.4 23.43 476.22 19.66 M 465.53 70.93 L 435.88 70.93 L 435.88 2.1 L 465.53 2.1 C 469.79 2.16 473.34 2.66 476.18 3.6 C 481 5.18 484.91 8.09 487.89 12.33 C 490.29 15.75 491.93 19.46 492.8 23.44 C 493.67 27.43 494.11 31.23 494.11 34.84 C 494.11 43.99 492.27 51.74 488.6 58.09 C 483.61 66.65 475.93 70.93 465.53 70.93"/><path d="M 503.82 2.1 L 518.11 2.1 L 518.11 70.93 L 503.82 70.93 Z M 503.82 2.1"/><path d="M 575.55 54.36 C 578.88 50.15 580.54 44.18 580.54 36.43 C 580.54 28.7 578.87 22.73 575.52 18.52 C 572.18 14.3 567.66 12.19 561.96 12.19 C 556.26 12.19 551.71 14.29 548.32 18.49 C 544.93 22.7 543.23 28.67 543.23 36.43 C 543.23 44.18 544.93 50.15 548.32 54.36 C 551.71 58.56 556.26 60.66 561.96 60.66 C 567.66 60.66 572.18 58.56 575.55 54.36 M 561.96 72.85 C 552.12 72.85 544.6 70.17 539.4 64.82 C 532.43 58.25 528.95 48.79 528.95 36.43 C 528.95 23.82 532.43 14.35 539.4 8.03 C 544.6 2.68 552.12 0 561.96 0 C 571.8 0 579.31 2.68 584.51 8.03 C 591.46 14.35 594.93 23.82 594.93 36.43 C 594.93 48.79 591.46 58.25 584.51 64.82 C 579.31 70.17 571.8 72.85 561.96 72.85"/><path d="M 630.88 60.99 C 634.28 60.99 637.03 60.61 639.15 59.87 C 643.16 58.43 645.17 55.77 645.17 51.88 C 645.17 49.61 644.18 47.85 642.18 46.61 C 640.19 45.39 637.06 44.32 632.8 43.38 L 625.51 41.75 C 618.35 40.13 613.4 38.37 610.66 36.47 C 606.02 33.3 603.71 28.33 603.71 21.57 C 603.71 15.41 605.95 10.29 610.43 6.21 C 614.91 2.13 621.5 0.09 630.18 0.09 C 637.44 0.09 643.62 2.02 648.75 5.86 C 653.87 9.71 656.55 15.29 656.8 22.6 L 642.98 22.6 C 642.73 18.46 640.92 15.52 637.56 13.78 C 635.32 12.62 632.53 12.05 629.2 12.05 C 625.5 12.05 622.54 12.8 620.33 14.29 C 618.12 15.79 617.02 17.87 617.02 20.55 C 617.02 23.01 618.11 24.84 620.29 26.06 C 621.68 26.87 624.67 27.82 629.25 28.91 L 641.11 31.75 C 646.31 33 650.23 34.66 652.88 36.75 C 656.99 39.99 659.04 44.68 659.04 50.81 C 659.04 57.1 656.64 62.32 651.83 66.48 C 647.02 70.63 640.22 72.71 631.45 72.71 C 622.48 72.71 615.43 70.66 610.29 66.57 C 605.15 62.48 602.59 56.85 602.59 49.69 L 616.31 49.69 C 616.75 52.83 617.61 55.18 618.88 56.74 C 621.21 59.57 625.22 60.99 630.88 60.99"/><path d="M 730.12 36.75 L 722.27 36.75 L 714.75 11.63 L 714.75 36.75 L 705.55 36.75 L 705.55 2.1 L 719.94 2.1 L 726.24 22.04 L 732.45 2.1 L 746.84 2.1 L 746.84 36.75 L 737.63 36.75 L 737.63 11.63 Z M 671.88 10.41 L 671.88 2.1 L 702.47 2.1 L 702.47 10.41 L 692.15 10.41 L 692.15 36.75 L 682.07 36.75 L 682.07 10.41 Z M 671.88 10.41"/></g></symbol></svg>
+<div id="mnc-preloader" class="mnc-preloader" aria-hidden="true">
+    <svg class="mnc-preloader__mark" viewBox="0 0 374.1 35.2" aria-hidden="true" focusable="false"><use href="#mnc-logo" xlink:href="#mnc-logo"/></svg>
+    <span class="mnc-preloader__bar"><span class="mnc-preloader__bar-fill"></span></span>
+</div>
+
+
+
+    
+<div class="wrap rwd">
+    <a class="mnc-skip" href="#mnc-main">Przejdź do treści</a>
+        <header class="row">
+     <div class="menu ">
+     <nav class="innermenu  container relative">
+                      <div>
+                 <button id="menuBtn" type="button" aria-label="Menu" aria-controls="mainmenu" aria-expanded="false">
+                     <svg width="22" height="16" viewBox="0 0 22 16" aria-hidden="true" focusable="false"><path d="M0 1h22M0 8h22M0 15h22" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+                 </button>
+             </div>
+             <div id="mainmenu">
+                 <div class="mnc-drawer-top">
+                     <svg class="mnc-wordmark" viewBox="0 0 374.1 35.2" aria-hidden="true" focusable="false"><use href="#mnc-logo" xlink:href="#mnc-logo"/></svg>
+                 <button id="closeMenuBtn" type="button" aria-label="Zamknij menu">
+                     <span aria-hidden="true">&times;</span>
+                 </button>
+                 </div>
+                 <span class="mnc-drawer-eyebrow">Nawigacja</span>
+                 <ul class="menu-list">
+                     <li class="home-link-menu-li">
+                         <h3>
+                             <a href="https://mancestudios.com/" title="Strona główna">
+                                 <img src="https://mancestudios.com/libraries/images/1px.gif" alt="Strona główna"
+                                     class="px1">
+                             </a>
+                         </h3>
+                     </li>
+                                                                                                                                                                                               <li class="parent"
+                                      id="hcategory_49"
+                                 >
+                                 <h3>
+                                     <a                                          href="https://mancestudios.com/odziez" title="Odzież"
+                                         id="headlink15" class="spanhover mainlevel">
+                                         <span>Odzież</span>
+                                         <img src="https://mancestudios.com/libraries/images/1px.gif" alt="" class="px1">
+                                     </a>
+                                 </h3>
+                                                                                                                <div class="submenu level1">
+                                <div class="mnc-mega-cats">                <ul class="level1" role="menu" >
+                                            <li
+                            class="parent"
+                            id="hcategory_55"
+                            role="none"
+                        >
+                            <h3 role="none">
+                                <a
+                                    href="https://mancestudios.com/bluzy"
+                                    title="Bluzy"
+                                    id="headercategory55"
+                                    class="spanhover"
+                                    role="menuitem"
+                                    aria-label="Bluzy. Steruj strzałkami góra/dół, aby nawigować. Naciśnij strzałkę w lewo, aby zmienić menu.Naciśnij strzałkę w prawo, aby rozwinąć."
+                                                                            aria-haspopup="true"
+                                                                                    aria-expanded="false"
+                                                                                                            >
+                                    <span>Bluzy</span>
+                                    <img src="https://mancestudios.com/libraries/images/1px.gif" alt="" class="px1" />
+                                </a>
+                            </h3>
+                            
+                                                                                                        <div class="submenu level2">
+                                                <ul class="level2" role="menu" aria-label="Bluzy">
+                                            <li
+                            class=""
+                            id="hcategory_56"
+                            role="none"
+                        >
+                            <h3 role="none">
+                                <a
+                                    href="https://mancestudios.com/bluzy-z-kapturem"
+                                    title="Bluzy z kapturem"
+                                    id="headercategory56"
+                                    class="spanhover"
+                                    role="menuitem"
+                                    aria-label="Bluzy z kapturem. Steruj strzałkami góra/dół, aby nawigować. Strzałki lewo/prawo zmieniają menu."
+                                                                    >
+                                    <span>Bluzy z kapturem</span>
+                                    <img src="https://mancestudios.com/libraries/images/1px.gif" alt="" class="px1" />
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li
+                            class=""
+                            id="hcategory_57"
+                            role="none"
+                        >
+                            <h3 role="none">
+                                <a
+                                    href="https://mancestudios.com/bluzy-klasyczne"
+                                    title="Bluzy klasyczne"
+                                    id="headercategory57"
+                                    class="spanhover"
+                                    role="menuitem"
+                                    aria-label="Bluzy klasyczne. Steruj strzałkami góra/dół, aby nawigować. Strzałki lewo/prawo zmieniają menu."
+                                                                    >
+                                    <span>Bluzy klasyczne</span>
+                                    <img src="https://mancestudios.com/libraries/images/1px.gif" alt="" class="px1" />
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                    </ul>
+                            </div>                                                    </li>
+                                            <li
+                            class=""
+                            id="hcategory_58"
+                            role="none"
+                        >
+                            <h3 role="none">
+                                <a
+                                    href="https://mancestudios.com/koszulki"
+                                    title="Koszulki"
+                                    id="headercategory58"
+                                    class="spanhover"
+                                    role="menuitem"
+                                    aria-label="Koszulki. Steruj strzałkami góra/dół, aby nawigować. Strzałki lewo/prawo zmieniają menu."
+                                                                    >
+                                    <span>Koszulki</span>
+                                    <img src="https://mancestudios.com/libraries/images/1px.gif" alt="" class="px1" />
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li
+                            class=""
+                            id="hcategory_59"
+                            role="none"
+                        >
+                            <h3 role="none">
+                                <a
+                                    href="https://mancestudios.com/longsleeve"
+                                    title="Longsleeve&#039;y"
+                                    id="headercategory59"
+                                    class="spanhover"
+                                    role="menuitem"
+                                    aria-label="Longsleeve&#039;y. Steruj strzałkami góra/dół, aby nawigować. Strzałki lewo/prawo zmieniają menu."
+                                                                    >
+                                    <span>Longsleeve&#039;y</span>
+                                    <img src="https://mancestudios.com/libraries/images/1px.gif" alt="" class="px1" />
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li
+                            class=""
+                            id="hcategory_60"
+                            role="none"
+                        >
+                            <h3 role="none">
+                                <a
+                                    href="https://mancestudios.com/szorty"
+                                    title="Szorty"
+                                    id="headercategory60"
+                                    class="spanhover"
+                                    role="menuitem"
+                                    aria-label="Szorty. Steruj strzałkami góra/dół, aby nawigować. Strzałki lewo/prawo zmieniają menu."
+                                                                    >
+                                    <span>Szorty</span>
+                                    <img src="https://mancestudios.com/libraries/images/1px.gif" alt="" class="px1" />
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li
+                            class=""
+                            id="hcategory_51"
+                            role="none"
+                        >
+                            <h3 role="none">
+                                <a
+                                    href="https://mancestudios.com/spodnie-dresowe"
+                                    title="Spodnie dresowe"
+                                    id="headercategory51"
+                                    class="spanhover"
+                                    role="menuitem"
+                                    aria-label="Spodnie dresowe. Steruj strzałkami góra/dół, aby nawigować. Strzałki lewo/prawo zmieniają menu."
+                                                                    >
+                                    <span>Spodnie dresowe</span>
+                                    <img src="https://mancestudios.com/libraries/images/1px.gif" alt="" class="px1" />
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                    </ul>
+                                    </div>
+                    <div class="mnc-mega-products" data-mega-src="https://mancestudios.com/odziez" aria-label="Polecane produkty"></div>
+                                            <a href="https://mancestudios.com/odziez" class="mnc-mega-promo">
+                            <img src="https://mancestudios.com/environment/cache/images/productGfx_222_900_1100/1.webp" alt="" loading="lazy">
+                            <span class="mnc-mega-promo__body">
+                                <span class="mnc-mega-promo__eyebrow">Nowość</span>
+                                <span class="mnc-mega-promo__title">Odzież<br>oversize</span>
+                                <span class="mnc-mega-promo__cta">Zobacz kolekcję &rarr;</span>
+                            </span>
+                        </a>
+                                                </div>                                                                 </li>
+                                                                                                                                                                                                                                <li class="parent"
+                                      id="hcategory_52"
+                                 >
+                                 <h3>
+                                     <a                                          href="https://mancestudios.com/akcesoria" title="Akcesoria"
+                                         id="headlink16" class="spanhover mainlevel">
+                                         <span>Akcesoria</span>
+                                         <img src="https://mancestudios.com/libraries/images/1px.gif" alt="" class="px1">
+                                     </a>
+                                 </h3>
+                                                                                                                <div class="submenu level1">
+                                <div class="mnc-mega-cats">                <ul class="level1" role="menu" >
+                                            <li
+                            class=""
+                            id="hcategory_61"
+                            role="none"
+                        >
+                            <h3 role="none">
+                                <a
+                                    href="https://mancestudios.com/czapki-z-daszkiem"
+                                    title="Czapki z daszkiem"
+                                    id="headercategory61"
+                                    class="spanhover"
+                                    role="menuitem"
+                                    aria-label="Czapki z daszkiem. Steruj strzałkami góra/dół, aby nawigować. Strzałki lewo/prawo zmieniają menu."
+                                                                    >
+                                    <span>Czapki z daszkiem</span>
+                                    <img src="https://mancestudios.com/libraries/images/1px.gif" alt="" class="px1" />
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                            <li
+                            class=""
+                            id="hcategory_62"
+                            role="none"
+                        >
+                            <h3 role="none">
+                                <a
+                                    href="https://mancestudios.com/czapki-zimowe"
+                                    title="Czapki zimowe"
+                                    id="headercategory62"
+                                    class="spanhover"
+                                    role="menuitem"
+                                    aria-label="Czapki zimowe. Steruj strzałkami góra/dół, aby nawigować. Strzałki lewo/prawo zmieniają menu."
+                                                                    >
+                                    <span>Czapki zimowe</span>
+                                    <img src="https://mancestudios.com/libraries/images/1px.gif" alt="" class="px1" />
+                                </a>
+                            </h3>
+                            
+                                                    </li>
+                                    </ul>
+                                    </div>
+                    <div class="mnc-mega-products" data-mega-src="https://mancestudios.com/akcesoria" aria-label="Polecane produkty"></div>
+                                            <a href="https://mancestudios.com/akcesoria" class="mnc-mega-promo">
+                            <img src="https://mancestudios.com/environment/cache/images/productGfx_446_900_1100/Projekt-bez-nazwy-1.webp" alt="" loading="lazy">
+                            <span class="mnc-mega-promo__body">
+                                <span class="mnc-mega-promo__eyebrow">Nowość</span>
+                                <span class="mnc-mega-promo__title">Zimowe<br>akcesoria</span>
+                                <span class="mnc-mega-promo__cta">Zobacz kolekcję &rarr;</span>
+                            </span>
+                        </a>
+                                                </div>                                                                 </li>
+                                                                                                                                                                                                                                <li id="hcategory_54"
+                                 >
+                                 <h3>
+                                     <a                                          href="https://mancestudios.com/okulary-przeciwsloneczne" title="Okulary"
+                                         id="headlink17" class="spanhover mainlevel">
+                                         <span>Okulary</span>
+                                         <img src="https://mancestudios.com/libraries/images/1px.gif" alt="" class="px1">
+                                     </a>
+                                 </h3>
+                                                                                                 </li>
+                                                                                                                                                                                                                                                                                                                                    <li>
+                                 <h3>
+                                     <a                                          href="https://mancestudios.com/wspolpraca" title="Współpraca"
+                                         id="headlink20" class="spanhover mainlevel">
+                                         <span>Współpraca</span>
+                                         <img src="https://mancestudios.com/libraries/images/1px.gif" alt="" class="px1">
+                                     </a>
+                                 </h3>
+                                                                                                 </li>
+                                                                                                                                                                                                                                <li>
+                                 <h3>
+                                     <a                                          href="https://mancestudios.com/kontakt" title="Kontakt"
+                                         id="headlink7" class="spanhover mainlevel">
+                                         <span>Kontakt</span>
+                                         <img src="https://mancestudios.com/libraries/images/1px.gif" alt="" class="px1">
+                                     </a>
+                                 </h3>
+                                                                                                 </li>
+                                                                                                                                                                                                                             </ul>
+                                  <div class="mnc-drawer-popular">
+                     <span class="mnc-drawer-popular__label">Popularne kategorie</span>
+                     <div class="mnc-drawer-popular__grid">
+                         <a href="https://mancestudios.com/bluzy">Bluzy</a>
+                         <a href="https://mancestudios.com/spodnie-dresowe">Spodnie</a>
+                         <a href="https://mancestudios.com/okulary-przeciwsloneczne">Okulary</a>
+                         <a href="https://mancestudios.com/akcesoria">Akcesoria</a>
+                     </div>
+                 </div>
+                                  <div class="mnc-drawer-utility">
+                     <a href="https://mancestudios.com/pl/panel" class="mnc-drawer-utility__btn">
+                         <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
+                         <span>Zaloguj / Moje konto</span>
+                     </a>
+                 </div>
+                 <div class="mnc-drawer-contact">
+                     <a href="tel:+48694438318">
+                         <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1v3.5c0 .6-.4 1-1 1C10.4 21.1 2.9 13.6 2.9 4.1c0-.6.4-1 1-1H7.4c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1l-2.2 2.2z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                         <span>694 438 318</span>
+                     </a>
+                     <a href="mailto:info@mancestudios.com">
+                         <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2.5" y="4.5" width="19" height="15" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M3.5 6l8.5 7 8.5-7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                         <span>info@mancestudios.com</span>
+                     </a>
+                 </div>
+                 <div class="mnc-drawer-social">
+                     <a href="https://www.instagram.com/mance.studios/" target="_blank" rel="nofollow noopener" aria-label="Instagram">
+                         <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                     </a>
+                 </div>
+             </div>
+                  <a href="https://mancestudios.com/" title="Strona główna" class="link-logo link-logo-text mnc-logo">
+             <svg class="mnc-wordmark" viewBox="0 0 374.1 35.2" aria-hidden="true" focusable="false"><use href="#mnc-logo" xlink:href="#mnc-logo"/></svg>
+             <span class="sr-only">MANCE STUDIOS</span>
+         </a>
+         <div class="menu-mobile ml-auto mnc-icons">
+             <button type="button" id="mnc-search-btn" class="mnc-icon-btn" aria-label="Szukaj" aria-controls="mnc-search" aria-expanded="false">
+                 <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M16.5 16.5L21 21" stroke="currentColor" stroke-width="1.7" fill="none"/></svg>
+             </button>
+             <a href="https://mancestudios.com/pl/panel" class="mnc-icon-btn mnc-icon-btn--account" aria-label="Moje konto">
+                 <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
+             </a>
+             <a href="https://mancestudios.com/pl/basket" title="Koszyk" aria-label="Koszyk" class="icon icon-custom-cart mnc-icon-btn" data-basket-count="0">
+                 <img src="https://mancestudios.com/libraries/images/1px.gif" alt="" class="px1">
+             </a>
+         </div>
+              </nav>
+     <div id="mnc-search" class="mnc-search" hidden>
+         <div class="mnc-search__inner">
+             
+<form data-product-view-type="" data-search-promotions-route="/pl/promotions" data-base-dir="" class="js__search search search-form" action="https://mancestudios.com/pl/s" method="post">
+    <div class="none bottest"><!-- <input name="bottest1" value="1" /> --> <input name="bottest2" /></div>
+    <div class="search-input search__input-area r--l-flex r--l-flex-vcenter">
+        <div class="search__input-area-item">
+            <span class="js__search-clear-btn search__btn icon icon-close search__icon none" role="button" aria-label="clear search input"></span>
+            <img class="search__loader none" src="https://mancestudios.com/libraries/images/loader.svg" alt="">
+        </div>
+        
+        <div class="search__input-area-item search__input-area-item_grow">
+            <input
+                maxlength="255"
+                class="search__input"
+                name="search"
+                type="search"
+                autocomplete="off"
+                placeholder="Szukaj"
+                aria-label="Szukaj w sklepie"
+                aria-haspopup="listbox"
+                aria-expanded="false"
+            >
+        </div>
+
+        <div class="search__input-area-item">
+            <span class="js__search-close-btn icon icon-back" role="button" aria-label="close search"></span>
+            <button
+                type="button"
+                class="js__search-submit-btn search-btn search__input-area-item btn btn-red search__btn-search r--l-flex r--l-flex-vcenter r--l-flex-hcenter"
+                aria-label="Szukaj"
+            >
+                <span class="fa fa-search search__icon_size-l"></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="search__content" role="listbox" aria-label="Search results"></div>
+    
+    <input type="hidden" class="js__search-settings" value="eyJTSE9XX1BIUkFTRV9TVUdHRVNUSU9OUyI6MSwiU0hPUlRFTl9OQU1FUyI6MSwiU0hPV19NT0JJTEVfQlROIjoxLCJESVNQTEFZX0ZPUk1BVCI6MSwiUkVTVUxUU19QRVJfUEFHRSI6MTAsIkNBVEVHT1JJRVNfRU5BQkxFRCI6dHJ1ZSwiUFJPRFVDRVJTX0VOQUJMRUQiOnRydWUsIlBST0RVQ1RTX0VOQUJMRUQiOnRydWUsIkZST05UX09SSUdJTkFMX1FVRVJZX1BIUkFTRSI6IjAiLCJQUk9EVUNUX0FVVE9DT01QTEVURV9CVVRUT05fVkVSU0lPTiI6MSwiU0hPV19QUk9EVUNUU19QUklDRSI6MSwiU0hPV19QUk9EVUNUU19TQ09SRSI6MSwiU0hPV19QUk9EVUNUU19BVkFJTEFCSUxJVFkiOjF9">
+</form>         </div>
+     </div>
+</div>    
+            </header>
+
+
+    
+            <div class="breadcrumbs large tablet row">
+            <div class="innerbreadcrumbs row container">
+                <a href="https://mancestudios.com/" title="Strona główna" rel="nofollow" class="breadcrumb-home left">
+                    <img src="https://mancestudios.com/libraries/images/1px.gif" alt="" class="px1">
+                    <span>Strona główna</span>
+                </a>
+
+                <ul itemscope itemtype="https://schema.org/BreadcrumbList" class="path left inline">
+                    
+                                                                <li class="bred-1 " itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a href="https://mancestudios.com/" itemprop="item">                                <span class="raq">&raquo;</span>   
+                                <span itemprop="name">Strona główna</span>
+                            </a>
+                                                            <meta itemprop="position" content="1" />
+                                                                                    </li>
+                                            <li class="bred-2 last" >
+                                                            <span class="raq">&raquo;</span>   
+                                <span>Kontakt</span>
+                            
+                                                    </li>
+                                    </ul>
+            </div>
+        </div>
+    
+                    
+                        
+    <div id="mnc-main" tabindex="-1"></div>
+    
+
+
+<main class="tgc" id="tgc">
+  <div class="tgc-progress" aria-hidden="true"><span></span></div>
+
+  
+  <section class="tgc-hero" data-glow>
+    <div class="tgc-orbs" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="tgc-wrap tgc-hero__grid">
+      <div class="tgc-hero__copy">
+        <p class="tgc-chip tgc-in" style="--d:0"><span class="tgc-chip__dot"></span>Nowy ebook Laury Mancewicz</p>
+        <h1 class="tgc-hero__h1">
+          <span class="tgc-hero__logo-mask"><img class="tgc-hero__logo" src="images/tgc-logo.webp" width="870" height="885" alt="The Glow Code by Laura Mancewicz" fetchpriority="high"></span>
+        </h1>
+        <p class="tgc-hero__lines">
+          <span class="tgc-line"><span style="--d:3">Poznaj moją <em>historię</em></span></span>
+          <span class="tgc-line"><span style="--d:4">Zrozum swoje <em>ciało</em></span></span>
+          <span class="tgc-line"><span style="--d:5">Zmień <em>nawyki</em></span></span>
+          <span class="tgc-line"><span style="--d:6">Poczuj się <em>lepiej</em></span></span>
+        </p>
+        <div class="tgc-hero__buy tgc-in" style="--d:7" id="tgc-kup">
+          <a class="tgc-btn tgc-btn--solid" href="https://mancestudios.com/ebooki/the-glow-code" data-magnetic><span>Kupuję ebook</span></a>
+          <div class="tgc-price">
+            <span class="tgc-price__val">XX zł</span>
+            <span class="tgc-price__note">PDF na e-mail od razu po płatności</span>
+          </div>
+          <a class="tgc-link tgc-hero__set" href="#tgc-pakiet">Cała seria taniej w&nbsp;pakiecie</a>
+        </div>
+        <ul class="tgc-hero__trust tgc-in" style="--d:8">
+          <li>Patronat dietetyczki klinicznej</li>
+          <li><span>Seria <span class="tgc-nw">SIBO-friendly</span></span></li>
+          <li>BLIK, karta, Przelewy24</li>
+        </ul>
+      </div>
+
+      <div class="tgc-stage" data-tilt>
+        <div class="tgc-stage__inner">
+          <img class="tgc-stage__card tgc-stage__card--4" src="images/tgc-okladka-egg-celent-640.webp" width="640" height="905" alt="" aria-hidden="true">
+          <img class="tgc-stage__card tgc-stage__card--3" src="images/tgc-okladka-saladoholic-640.webp" width="640" height="905" alt="" aria-hidden="true">
+          <img class="tgc-stage__card tgc-stage__card--2" src="images/tgc-okladka-hot-girls-bowl-640.webp" width="640" height="905" alt="" aria-hidden="true">
+          <div class="tgc-stage__main">
+            <img src="images/tgc-okladka-the-glow-code.webp" width="1200" height="1697" alt="Okładka ebooka The Glow Code - Laura Mancewicz">
+            <span class="tgc-stage__shine" aria-hidden="true"></span>
+          </div>
+        </div>
+        <svg class="tgc-badge" viewBox="0 0 160 160" aria-hidden="true">
+          <defs><path id="tgc-badge-path" d="M80 80 m-60 0 a60 60 0 1 1 120 0 a60 60 0 1 1 -120 0"/></defs>
+          <circle cx="80" cy="80" r="76" class="tgc-badge__bg"/>
+          <text><textPath href="#tgc-badge-path">SIBO-FRIENDLY / FEEL-GOOD / TIPY / MINDSET / </textPath></text>
+          <circle cx="80" cy="80" r="20" class="tgc-badge__core"/>
+        </svg>
+      </div>
+    </div>
+    <div class="tgc-wrap tgc-hero__foot">
+      <a class="tgc-scrollhint" href="#tgc-w-srodku">Przewiń <i aria-hidden="true"></i></a>
+    </div>
+  </section>
+
+  
+  <div class="tgc-marquee" aria-hidden="true">
+    <div class="tgc-marquee__row"><div class="tgc-marquee__track">
+      <span>SIBO-friendly</span><span>Feel-good</span><span>Tipy</span><span>Mindset</span><span>Self-care</span><span>Hot girls bowl</span><span>Saladoholic</span><span>Egg-celent</span>
+      <span>SIBO-friendly</span><span>Feel-good</span><span>Tipy</span><span>Mindset</span><span>Self-care</span><span>Hot girls bowl</span><span>Saladoholic</span><span>Egg-celent</span>
+    </div></div>
+    <div class="tgc-marquee__row tgc-marquee__row--rev"><div class="tgc-marquee__track">
+      <span>Poznaj moją historię</span><span>Zrozum swoje ciało</span><span>Zmień nawyki</span><span>Poczuj się lepiej</span>
+      <span>Poznaj moją historię</span><span>Zrozum swoje ciało</span><span>Zmień nawyki</span><span>Poczuj się lepiej</span>
+    </div></div>
+  </div>
+
+  
+  <section class="tgc-stats">
+    <div class="tgc-wrap">
+      <div class="tgc-stats__panel">
+        <img class="tgc-prop tgc-prop--bag" src="images/tgc-prop-bag.webp" width="480" height="480" alt="" aria-hidden="true" loading="lazy" data-float>
+        <img class="tgc-prop tgc-prop--pan" src="images/tgc-prop-pan.webp" width="480" height="480" alt="" aria-hidden="true" loading="lazy" data-float>
+        <div class="tgc-stats__grid">
+          <div class="tgc-stat tgc-rv"><b data-count="99">99</b><span>przepisów <span class="tgc-nw">SIBO-friendly</span>: bowle, sałatki, śniadania</span></div>
+          <div class="tgc-stat tgc-rv"><b data-count="4">4</b><span>ebooki w&nbsp;serii, każdy w&nbsp;swoim kolorze</span></div>
+          <div class="tgc-stat tgc-rv"><b><span data-count="92">92</span> tys.</b><span>osób obserwuje Laurę na Instagramie</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="tgc-sec" id="tgc-w-srodku">
+    <div class="tgc-wrap">
+      <div class="tgc-head tgc-rv">
+        <div>
+          <p class="tgc-eyebrow">Co jest w&nbsp;środku</p>
+          <h2 class="tgc-h2">Trzy filary, <em>jeden glow</em></h2>
+        </div>
+        <p class="tgc-lead">To nie jest kolejna dieta. To mój sposób na codzienność, w&nbsp;której jedzenie, ruch i&nbsp;głowa grają do jednej bramki.</p>
+      </div>
+      <div class="tgc-stack">
+        <article class="tgc-card tgc-card--1">
+          <div class="tgc-card__body">
+            <span class="tgc-card__num">01 / 03</span>
+            <h3 class="tgc-card__title">Tipy</h3>
+            <p>Konkretne patenty na talerz, zakupy i&nbsp;ruch, które da się wdrożyć od jutra, bez liczenia każdej kalorii.</p>
+            <ul><li>Jak komponować posiłki</li><li>Lista zakupów glow</li><li>Ruch, który lubisz</li></ul>
+          </div>
+          <div class="tgc-card__photo"><img src="images/tgc-laura-tipy.webp" width="720" height="956" alt="Laura Mancewicz w sportowym kadrze" loading="lazy"></div>
+        </article>
+        <article class="tgc-card tgc-card--2">
+          <div class="tgc-card__body">
+            <span class="tgc-card__num">02 / 03</span>
+            <h3 class="tgc-card__title">Mindset</h3>
+            <p>Jak przestać zaczynać od poniedziałku i&nbsp;zbudować nawyki, które zostają z&nbsp;Tobą na dłużej.</p>
+            <ul><li>Moja historia</li><li>Nawyki krok po kroku</li><li>Co robić, gdy się nie chce</li></ul>
+          </div>
+          <div class="tgc-card__photo"><img src="images/tgc-laura-mindset.webp" width="720" height="956" alt="Laura Mancewicz z uniesionymi rękami, uśmiechnięta" loading="lazy"></div>
+        </article>
+        <article class="tgc-card tgc-card--3">
+          <div class="tgc-card__body">
+            <span class="tgc-card__num">03 / 03</span>
+            <h3 class="tgc-card__title"><span class="tgc-nw">Self-care</span></h3>
+            <p>Sen, regeneracja i&nbsp;małe rytuały, dzięki którym czujesz się dobrze w&nbsp;swoim ciele, nie tylko wyglądasz.</p>
+            <ul><li>Rytuały na dzień</li><li>Regeneracja i&nbsp;sen</li><li>Zrozum sygnały ciała</li></ul>
+          </div>
+          <div class="tgc-card__photo"><img src="images/tgc-laura-selfcare.webp" width="720" height="956" alt="Laura Mancewicz odpoczywająca na podłodze studia" loading="lazy"></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="tgc-hs" id="tgc-seria" data-active="1">
+    <div class="tgc-hs__sticky">
+      <div class="tgc-wrap tgc-hs__head">
+        <div>
+          <p class="tgc-eyebrow">Glow Code Series</p>
+          <h2 class="tgc-h2">Cztery ebooki, <em>cztery kolory</em></h2>
+        </div>
+        <p class="tgc-hs__count" aria-hidden="true"><b>01</b> / 04</p>
+      </div>
+      <div class="tgc-hs__track">
+        <article class="tgc-book" data-i="1">
+          <a class="tgc-book__img" href="https://mancestudios.com/ebooki/the-glow-code" tabindex="-1" aria-hidden="true"><img src="images/tgc-okladka-the-glow-code-640.webp" width="640" height="905" alt="" loading="lazy"></a>
+          <div class="tgc-book__info">
+            <span class="tgc-book__tag">1. Poradnik</span>
+            <h3 class="tgc-book__title"><a href="https://mancestudios.com/ebooki/the-glow-code">The Glow Code</a></h3>
+            <p>Moja historia, tipy, mindset i&nbsp;<span class="tgc-nw">self-care</span> w&nbsp;jednym miejscu. Od tego warto zacząć.</p>
+            <div class="tgc-book__foot"><span class="tgc-book__price">XX zł</span><a class="tgc-btn tgc-btn--solid" href="https://mancestudios.com/ebooki/the-glow-code">Kup</a></div>
+          </div>
+        </article>
+        <article class="tgc-book" data-i="2">
+          <a class="tgc-book__img" href="https://mancestudios.com/ebooki/hot-girls-bowl" tabindex="-1" aria-hidden="true"><img src="images/tgc-okladka-hot-girls-bowl-640.webp" width="640" height="905" alt="" loading="lazy"></a>
+          <div class="tgc-book__info">
+            <span class="tgc-book__tag">2. <span class="tgc-nw">SIBO-friendly</span></span>
+            <h3 class="tgc-book__title"><a href="https://mancestudios.com/ebooki/hot-girls-bowl">Hot Girls Bowl</a></h3>
+            <p>33 pełnowartościowe bowle na lunch i&nbsp;kolację.</p>
+            <div class="tgc-book__foot"><span class="tgc-book__price">XX zł</span><a class="tgc-btn tgc-btn--solid" href="https://mancestudios.com/ebooki/hot-girls-bowl">Kup</a></div>
+          </div>
+        </article>
+        <article class="tgc-book" data-i="3">
+          <a class="tgc-book__img" href="https://mancestudios.com/ebooki/saladoholic" tabindex="-1" aria-hidden="true"><img src="images/tgc-okladka-saladoholic-640.webp" width="640" height="905" alt="" loading="lazy"></a>
+          <div class="tgc-book__info">
+            <span class="tgc-book__tag">3. <span class="tgc-nw">SIBO-friendly</span></span>
+            <h3 class="tgc-book__title"><a href="https://mancestudios.com/ebooki/saladoholic">Saladoholic</a></h3>
+            <p>33 przepisy na kolorowe sałatki, które sycą.</p>
+            <div class="tgc-book__foot"><span class="tgc-book__price">XX zł</span><a class="tgc-btn tgc-btn--solid" href="https://mancestudios.com/ebooki/saladoholic">Kup</a></div>
+          </div>
+        </article>
+        <article class="tgc-book" data-i="4">
+          <a class="tgc-book__img" href="https://mancestudios.com/ebooki/egg-celent" tabindex="-1" aria-hidden="true"><img src="images/tgc-okladka-egg-celent-640.webp" width="640" height="905" alt="" loading="lazy"></a>
+          <div class="tgc-book__info">
+            <span class="tgc-book__tag">4. <span class="tgc-nw">SIBO-friendly</span></span>
+            <h3 class="tgc-book__title"><a href="https://mancestudios.com/ebooki/egg-celent"><span class="tgc-nw">Egg-celent</span></a></h3>
+            <p>33 przepisy na śniadania na dobry start dnia.</p>
+            <div class="tgc-book__foot"><span class="tgc-book__price">XX zł</span><a class="tgc-btn tgc-btn--solid" href="https://mancestudios.com/ebooki/egg-celent">Kup</a></div>
+          </div>
+        </article>
+        <article class="tgc-deal">
+          <span class="tgc-deal__badge">Taniej niż osobno</span>
+          <div class="tgc-deal__covers" aria-hidden="true">
+            <img src="images/tgc-okladka-the-glow-code-640.webp" width="640" height="905" alt="" loading="lazy">
+            <img src="images/tgc-okladka-hot-girls-bowl-640.webp" width="640" height="905" alt="" loading="lazy">
+            <img src="images/tgc-okladka-saladoholic-640.webp" width="640" height="905" alt="" loading="lazy">
+            <img src="images/tgc-okladka-egg-celent-640.webp" width="640" height="905" alt="" loading="lazy">
+          </div>
+          <h3 class="tgc-deal__title">Cała seria <em>w&nbsp;pakiecie</em></h3>
+          <p class="tgc-deal__desc">4 ebooki: poradnik i&nbsp;99 przepisów <span class="tgc-nw">SIBO-friendly</span></p>
+          <div class="tgc-deal__price"><b>XX zł</b><span>zamiast XX zł</span></div>
+          <a class="tgc-btn tgc-btn--lime" href="https://mancestudios.com/ebooki/glow-code-series-pakiet" data-magnetic>Kupuję pakiet</a>
+        </article>
+      </div>
+      <div class="tgc-wrap"><div class="tgc-hs__bar" aria-hidden="true"><span></span></div></div>
+    </div>
+  </section>
+
+  
+  <section class="tgc-bundle" id="tgc-pakiet">
+    <div class="tgc-bundle__panel">
+      <div class="tgc-wrap tgc-bundle__grid">
+        <div class="tgc-rv">
+          <p class="tgc-eyebrow">Pakiet</p>
+          <h2 class="tgc-h2">Cała seria <em class="tgc-nw">w jednym</em></h2>
+          <p class="tgc-lead">Poradnik i&nbsp;99 przepisów <span class="tgc-nw">SIBO-friendly</span>. Wszystkie cztery ebooki w&nbsp;jednej paczce, taniej niż osobno.</p>
+          <ul class="tgc-bundle__list">
+            <li><span><i class="tgc-dot tgc-dot--1"></i>The Glow Code</span><span>poradnik</span></li>
+            <li><span><i class="tgc-dot tgc-dot--2"></i>Hot Girls Bowl</span><span>33 przepisy</span></li>
+            <li><span><i class="tgc-dot tgc-dot--3"></i>Saladoholic</span><span>33 przepisy</span></li>
+            <li><span><i class="tgc-dot tgc-dot--4"></i><span class="tgc-nw">Egg-celent</span></span><span>33 przepisy</span></li>
+          </ul>
+          <div class="tgc-bundle__buy">
+            <a class="tgc-btn tgc-btn--lime" href="https://mancestudios.com/ebooki/glow-code-series-pakiet" data-magnetic><span>Kupuję pakiet</span></a>
+            <div class="tgc-price"><span class="tgc-price__val">XX zł</span><span class="tgc-price__note">zamiast XX zł przy zakupie osobno</span></div>
+          </div>
+        </div>
+        <div class="tgc-fan" aria-hidden="true">
+          <img src="images/tgc-okladka-the-glow-code-640.webp" width="640" height="905" alt="" loading="lazy">
+          <img src="images/tgc-okladka-hot-girls-bowl-640.webp" width="640" height="905" alt="" loading="lazy">
+          <img src="images/tgc-okladka-saladoholic-640.webp" width="640" height="905" alt="" loading="lazy">
+          <img src="images/tgc-okladka-egg-celent-640.webp" width="640" height="905" alt="" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="tgc-sec tgc-author" id="tgc-autorka">
+    <div class="tgc-wrap tgc-author__grid">
+      <div class="tgc-author__media">
+        <div class="tgc-author__img tgc-author__img--main" data-parallax="-8"><img src="images/tgc-laura-1.webp" width="960" height="1275" alt="Laura Mancewicz" loading="lazy"></div>
+        <div class="tgc-author__img tgc-author__img--small" data-parallax="12"><img src="images/tgc-laura-2.webp" width="866" height="1150" alt="" loading="lazy"></div>
+        <span class="tgc-author__sig">Laura Mancewicz</span>
+      </div>
+      <div>
+        <p class="tgc-eyebrow tgc-rv">O mnie</p>
+        <h2 class="tgc-h2 tgc-rv">Hej, tu <em>Laura</em></h2>
+        <p class="tgc-words" data-words>Założyłam Mance Studios i&nbsp;na co dzień dzielę się z&nbsp;Wami tym, jak żyję. W&nbsp;The Glow Code zebrałam wszystko, co naprawdę zadziałało u&nbsp;mnie: bez restrykcji, bez zaczynania od poniedziałku, z&nbsp;jedzeniem, które lubię.</p>
+        <p class="tgc-author__note tgc-rv">[Do uzupełnienia przez autorkę: 2-3 zdania o&nbsp;tym, skąd wziął się ebook.]</p>
+        <div class="tgc-author__foot tgc-rv">
+          <p class="tgc-quote">Glow to nie filtr. <em>To nawyk.</em></p>
+          <a class="tgc-link" href="https://www.instagram.com/mancewicz/" target="_blank" rel="noopener">@mancewicz na Instagramie</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="tgc-expert" id="tgc-patronat">
+    <div class="tgc-wrap">
+      <div class="tgc-expert__card">
+        <div class="tgc-expert__top">
+          <div class="tgc-expert__who tgc-rv">
+            <p class="tgc-eyebrow">Patronat merytoryczny</p>
+            <h2 class="tgc-expert__name">Natalia <em>Daniluk</em></h2>
+            <p class="tgc-expert__role">dietetyczka kliniczna</p>
+            <p class="tgc-expert__lead">Przepisy z&nbsp;serii <span class="tgc-nw">SIBO-friendly</span> powstały pod patronatem merytorycznym dietetyczki klinicznej. Smacznie i&nbsp;kolorowo, ale przede wszystkim odpowiedzialnie.</p>
+          </div>
+          <svg class="tgc-stamp" viewBox="0 0 200 200" role="img" aria-label="Sprawdzone merytorycznie przez dietetyczkę kliniczną">
+            <defs><path id="tgc-stamp-path" d="M100 100 m-76 0 a76 76 0 1 1 152 0 a76 76 0 1 1 -152 0"/></defs>
+            <circle cx="100" cy="100" r="96" class="tgc-stamp__ring"/>
+            <circle cx="100" cy="100" r="56" class="tgc-stamp__ring"/>
+            <g class="tgc-stamp__spin"><text><textPath href="#tgc-stamp-path">SPRAWDZONE MERYTORYCZNIE / DIETETYCZKA KLINICZNA / </textPath></text></g>
+            <path class="tgc-stamp__check" d="M76 100 L94 118 L128 84"/>
+          </svg>
+        </div>
+        <ol class="tgc-steps">
+          <li class="tgc-step tgc-rv"><span class="tgc-step__n">01</span><h3>Przepisy pod wrażliwy brzuch</h3><p>Skład przepisów z&nbsp;serii dobrany z&nbsp;myślą o&nbsp;osobach z&nbsp;SIBO i&nbsp;wrażliwym układem trawiennym.</p></li>
+          <li class="tgc-step tgc-rv"><span class="tgc-step__n">02</span><h3>Merytoryczny nadzór</h3><p>Dietetyczka kliniczna objęła serię patronatem merytorycznym, czyli treść nie opiera się tylko na moim doświadczeniu.</p></li>
+          <li class="tgc-step tgc-rv"><span class="tgc-step__n">03</span><h3>Bez obietnic bez pokrycia</h3><p>Żadnych cudownych diet i&nbsp;szybkich efektów. Dobre nawyki, jedzenie, które smakuje, i&nbsp;zdrowy rozsądek.</p></li>
+        </ol>
+        <p class="tgc-expert__disc">Ebook ma charakter edukacyjny i&nbsp;nie zastępuje konsultacji z&nbsp;lekarzem ani dietetykiem. Jeśli masz zdiagnozowane SIBO lub inne choroby przewodu pokarmowego, skonsultuj zmiany w&nbsp;diecie ze specjalistą.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="tgc-sec tgc-whosec">
+    <div class="tgc-wrap tgc-whosec__grid">
+      <div class="tgc-whosec__art">
+        <span class="tgc-blob" aria-hidden="true"></span>
+        <div class="tgc-whosec__photo"><img src="images/tgc-laura-who.webp" width="866" height="1150" alt="Laura Mancewicz w czarnej stylizacji i wysokich butach" loading="lazy"></div>
+        <span class="tgc-whosec__tag">Glow to nawyk</span>
+      </div>
+      <div>
+      <div class="tgc-rv">
+        <p class="tgc-eyebrow">Dla kogo</p>
+        <h2 class="tgc-h2">To ebook <em>dla Ciebie</em>, jeśli</h2>
+      </div>
+      <ul class="tgc-who">
+        <li class="tgc-rv"><b>01</b><span>Masz dość diet, które kończą się po tygodniu</span></li>
+        <li class="tgc-rv"><b>02</b><span>Chcesz jeść kolorowo i&nbsp;nie myśleć o&nbsp;tym godzinami</span></li>
+        <li class="tgc-rv"><b>03</b><span>Masz wrażliwy brzuch i&nbsp;szukasz przepisów <span class="tgc-nw">SIBO-friendly</span></span></li>
+        <li class="tgc-rv"><b>04</b><span>Chcesz lepiej rozumieć sygnały swojego ciała</span></li>
+        <li class="tgc-rv"><b>05</b><span>Szukasz motywacji, która nie jest presją</span></li>
+        <li class="tgc-rv"><b>06</b><span>Chcesz poczuć się lepiej, a&nbsp;nie tylko lepiej wyglądać</span></li>
+      </ul>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="tgc-sec tgc-get">
+    <div class="tgc-wrap tgc-get__grid">
+      <div class="tgc-get__intro">
+        <div class="tgc-rv">
+          <p class="tgc-eyebrow">Jak to działa</p>
+          <h2 class="tgc-h2">Kupujesz <em>i&nbsp;czytasz</em> od razu</h2>
+        </div>
+        <div class="tgc-phone" aria-hidden="true" data-float>
+          <div class="tgc-phone__screen">
+            <span class="tgc-phone__bar"></span>
+            <img src="images/tgc-okladka-the-glow-code-640.webp" width="640" height="905" alt="" loading="lazy">
+          </div>
+          <span class="tgc-phone__chip">the-glow-code.pdf</span>
+        </div>
+      </div>
+      <ol class="tgc-flow">
+        <li class="tgc-rv"><b>1</b><span><strong>Wybierasz ebook lub pakiet</strong>i płacisz BLIKIEM, kartą, Przelewami24, Google Pay albo Apple Pay.</span></li>
+        <li class="tgc-rv"><b>2</b><span><strong>Dostajesz PDF na e-mail</strong>zaraz po zaksięgowaniu płatności.</span></li>
+        <li class="tgc-rv"><b>3</b><span><strong>Czytasz gdzie chcesz</strong>na telefonie, tablecie albo komputerze.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  
+  <section class="tgc-sec tgc-sec--soft" id="tgc-faq">
+    <div class="tgc-wrap tgc-faq">
+      <div class="tgc-faq__side">
+        <div class="tgc-rv">
+          <p class="tgc-eyebrow">FAQ</p>
+          <h2 class="tgc-h2">Pytania</h2>
+        </div>
+        <div class="tgc-help tgc-rv">
+          <img class="tgc-help__img" src="images/tgc-laura-avatar.webp" width="240" height="240" alt="" aria-hidden="true" loading="lazy">
+          <p class="tgc-help__t">Masz inne pytanie?</p>
+          <p class="tgc-help__d">Napisz do nas przez formularz kontaktowy sklepu.</p>
+          <a class="tgc-link" href="https://mancestudios.com/kontakt">Kontakt ze sklepem</a>
+        </div>
+      </div>
+      <div class="tgc-faq__list">
+        <details><summary>W&nbsp;jakiej formie dostanę ebook?</summary><div class="tgc-faq__a"><p>Ebook to plik PDF. Link do pobrania przyjdzie na Twój e-mail zaraz po zaksięgowaniu płatności.</p></div></details>
+        <details><summary>Czy przepisy są dla osób z&nbsp;SIBO?</summary><div class="tgc-faq__a"><p>Przepisy z&nbsp;serii <span class="tgc-nw">SIBO-friendly</span> powstały pod patronatem merytorycznym dietetyczki klinicznej. Ebook nie zastępuje konsultacji z&nbsp;lekarzem ani dietetykiem.</p></div></details>
+        <details><summary>Czy mogę czytać na telefonie?</summary><div class="tgc-faq__a"><p>Tak, PDF otworzysz na telefonie, tablecie i&nbsp;komputerze.</p></div></details>
+        <details><summary>Czy mogę kupić tylko jeden ebook z&nbsp;serii?</summary><div class="tgc-faq__a"><p>Tak, każdy ebook kupisz osobno. Pakiet czterech części wychodzi taniej.</p></div></details>
+        <details><summary>Czy mogę zwrócić ebook?</summary><div class="tgc-faq__a"><p>Ebook to treść cyfrowa. Prawo odstąpienia od umowy wygasa w&nbsp;chwili rozpoczęcia dostarczania pliku za Twoją wyraźną zgodą, o&nbsp;którą zapytamy przy zamówieniu. Szczegóły w&nbsp;regulaminie sklepu.</p></div></details>
+        <details><summary>Czy dostanę fakturę?</summary><div class="tgc-faq__a"><p>Tak, fakturę wystawimy po podaniu danych przy zamówieniu.</p></div></details>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="tgc-final" data-glow>
+    <div class="tgc-orbs tgc-orbs--final" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="tgc-wrap tgc-final__in">
+      <h2 class="tgc-final__title tgc-rv">Poczuj się <em>lepiej</em></h2>
+      <p class="tgc-lead tgc-rv">Zacznij od The Glow Code. PDF trafi na Twój e-mail od razu po płatności.</p>
+      <a class="tgc-btn tgc-btn--solid tgc-rv" href="https://mancestudios.com/ebooki/the-glow-code" data-magnetic><span>Kupuję ebook za XX zł</span></a>
+      <a class="tgc-link tgc-rv" href="#tgc-pakiet">albo cała seria taniej w&nbsp;pakiecie</a>
+    </div>
+  </section>
+
+  <div class="tgc-buybar" id="tgc-buybar" aria-hidden="true">
+    <div class="tgc-buybar__t"><b>The Glow Code</b><span>PDF, XX zł</span></div>
+    <a class="tgc-btn tgc-btn--lime" href="https://mancestudios.com/ebooki/the-glow-code" tabindex="-1">Kup</a>
+  </div>
+</main>
+
+<div class="bottom-footer row">
+	<div class="container">
+        
+    </div>
+</div>    <footer class="footer row mnc-foot">
+        <div class="innerfooter container row">
+            <div class="mnc-footer">
+                <div class="mnc-footer__brand">
+                    <svg class="mnc-wordmark" viewBox="0 0 374.1 35.2" aria-hidden="true" focusable="false"><use href="#mnc-logo" xlink:href="#mnc-logo"/></svg><span class="sr-only">MNC Studios</span>
+                    <p>Odzież oversize, okulary przeciwsłoneczne i rytuał poranny. Zaprojektowane w Białymstoku.</p>
+                </div>
+                <nav class="mnc-footer__col" aria-label="Sklep">
+                    <h2 class="mnc-footer__h">Sklep</h2>
+                    <a href="https://mancestudios.com/odziez">Odzież</a>
+                    <a href="https://mancestudios.com/spodnie-dresowe">Spodnie dresowe</a>
+                    <a href="https://mancestudios.com/okulary-przeciwsloneczne">Okulary przeciwsłoneczne</a>
+                    <a href="https://mancestudios.com/akcesoria">Akcesoria</a>
+                    <a href="https://mancestudios.com/rytual">Rytuał</a>
+                </nav>
+                <nav class="mnc-footer__col" aria-label="Obsługa klienta">
+                    <h2 class="mnc-footer__h">Obsługa</h2>
+                    <a href="https://mancestudios.com/kontakt">Kontakt</a>
+                    <a href="https://mancestudios.com/zwroty">Zwroty i reklamacje</a>
+                    <a class="mnc-footer__withdraw" href="https://zwroty-shoper.pl/019ecff2-afb2-7bb7-907a-e731da8580e5/mance-studios/pl_PL">Odstąp od umowy tutaj</a>
+                    <a href="https://mancestudios.com/platnosci-dostawa-reklamacje">Płatności i dostawa</a>
+                </nav>
+                <nav class="mnc-footer__col" aria-label="Informacje prawne">
+                    <h2 class="mnc-footer__h">Marka i prawo</h2>
+                    <a href="https://mancestudios.com/pl/n/list">Aktualności</a>
+                    <a href="https://mancestudios.com/regulamin">Regulamin</a>
+                    <a href="https://mancestudios.com/polityka-prywatnosci">Polityka prywatności</a>
+                    <a href="https://mancestudios.com/polityka-cookies">Polityka plików cookies</a>
+                    <a href="#cookies-settings">Ustawienia plików cookies</a>
+                    <a href="https://mancestudios.com/klauzula-informacyjna">Klauzula informacyjna</a>
+                    <a href="https://mancestudios.com/dostepnosc">Deklaracja dostępności</a>
+                </nav>
+            </div>
+            <div class="mnc-footer__bottom">
+                <span>&copy; 2026 MNC Studios. Wszystkie prawa zastrzeżone.</span>
+                <span>BLIK &middot; Visa &middot; Mastercard &middot; Apple Pay &middot; Google Pay &middot; Przelewy24</span>
+                <span class="mnc-footer__credit">Made by <a href="https://impact-ads.pl" rel="nofollow noopener" target="_blank">Impact Ads</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="up mnc-up-hidden" aria-hidden="true">
+        <a href="#" title="do góry" class="btn fa fa-2x fa-angle-up" tabindex="-1">
+            <img src="https://mancestudios.com/libraries/images/1px.gif" alt="" class="px1" />
+            <span>do góry</span>
+        </a>
+    </div>
+    <a href="https://mancestudios.com/pl/basket" class="mnc-fab icon-custom-cart" title="Koszyk" aria-label="Koszyk" data-basket-count="0">
+        <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 8h14l-1 12H6L5 8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 8V6.5a3 3 0 016 0V8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </a>
+</div><!-- and of wrap -->
+
+<div class="modal-overlay"></div><!-- overlay for modal lightbox-->
+
+    <div
+        id="aria-live-assertive"
+        role="log"
+        aria-live="assertive"
+        aria-atomic="true"
+        class="sr-only"
+        tabindex="-1"
+    ></div>
+
+
+
+
+    <div class="info-message info-message_hidden">
+        <strong class="info-message__text">Sklep jest w trybie podglądu</strong>
+    </div>
+    <div class="center">
+        <span id="turn-classic" class="btn rwd">
+    		Pokaż pełną wersję strony
+		</span>
+    </div>
+
+
+
+
+
+
+<template id="consents-modal">
+    <div class="consents">
+        <div class="consents__wrapper">
+            <div class="consents__modal">
+                <div class="consents__basic-view js__basic-view" role="dialog" aria-modal="true" aria-labelledby="customer_privacy_banner_header">
+                    <div class="consents__content">
+                        <p class="consents__heading" id="customer_privacy_banner_header">
+                            Nasze ciasteczka, Twój wybór.
+                        </p>
+
+                        <p>Wykorzystujemy pliki COOKIE do spersonalizowania treści i reklam, aby oferować funkcje społecznościowe i analizować ruch w naszej witrynie. Informacje o tym, jak korzystasz z naszej witryny, możemy udostępniać partnerom społecznościowym, reklamowym i analitycznym. Partnerzy mogą połączyć te informacje z innymi danymi otrzymanymi od Ciebie lub uzyskanymi podczas korzystania z ich usług.</p>
+
+                                                    <p>
+                                <a class="consents__link" href="https://mancestudios.com/polityka-prywatnosci">Szczegóły o używanych przez nas plikach cookie oraz zasadach przetwarzania danych osobowych znajdziesz w Polityce prywatności.</a>
+                            </p>
+                                            </div>
+
+                    <div class="consents__buttons">
+                                                                                                            <button type="button" class="btn js__accept-necessary">Zaakceptuj tylko niezbędne</button>
+                                                        <button type="button" class="btn js__show-advanced-view">Dostosuj zgody</button>
+                                                <button type="button" class="btn btn-red js__accept-all-consents">Zaakceptuj wszystkie</button>
+                    </div>
+                </div>
+
+                <div class="consents__advanced-view js__advanced-view none" role="dialog" aria-modal="true" aria-labelledby="customer_privacy_cookie_header">
+                    <div class="consents__advanced-content">
+                        <p class="consents__heading" id="customer_privacy_cookie_header">
+                            Ustawienia plików cookies
+                        </p>
+
+                        <p>Plik COOKIE to niewielka ilość danych, która zazwyczaj posiada unikalny identyfikator. Jest wysyłany z komputera witryny do przeglądarki i tam przechowywany na dysku twardym. Zgodnie z prawem możemy przechowywać pliki COOKIE na Twoim urządzeniu, jeśli jest to absolutnie niezbędne do korzystania z tej witryny. W przypadku wszystkich innych celów wymagana jest Twoja zgoda. Ta strona internetowa używa różnych rodzajów plików COOKIE. Niektóre pliki COOKIE są umieszczane przez usługi zewnętrzne, które pojawiają się na naszych stronach. Na tej stronie możesz zmienić lub wycofać swoją zgodę na korzystanie z plików COOKIE. W razie pytań dotyczących zarządzania plikami COOKIE przez spółkę / firmę MANCE STUDIOS LAURA MANCEWICZ, prosimy o kontakt pod adresem: <a href="mailto:info@mancestudios.com">info@mancestudios.com</a> . Więcej informacji o sposobie przetwarzania danych osobowych przez spółkę / firmę MANCE STUDIOS LAURA MANCEWICZ, można znaleźć w naszej Polityce Prywatności . </p>
+                        <br>
+
+                        <div class="consents__consent">
+                            <div class="consents__consent-checkbox">
+                                <span class="checkbox-wrap">
+                                    <input type="checkbox" id="select_all" class="checkbox js__select-all-consents">
+                                    <label for="select_all"></label>
+                                </span>
+                            </div>
+
+                            <div class="consents__consent-description">
+                                <p class="consents__text">
+                                    <label for="select_all"><strong>Zaznacz wszystko</strong></label>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="consents__consent">
+                            <div class="consents__consent-checkbox">
+                                <span class="checkbox-wrap">
+                                    <input type="checkbox" id="functionCategoryConsent" name="functionCategoryConsent" class="checkbox" checked disabled>
+                                    <label for="functionCategoryConsent"></label>
+                                </span>
+                            </div>
+
+                            <div class="consents__consent-description">
+                                <p class="consents__text">
+                                    <label for="functionCategoryConsent"><strong>Niezbędne do działania strony</strong></label>
+                                </p>
+
+                                <p>
+                                    <p>Są wymagane do podstawowych funkcji naszej witryny. Z tego powodu nie można zrezygnować z tych plików COOKIE. Ograniczamy te pliki COOKIE tylko do tych, które są nam niezbędne do świadczenia żądanych usług. Na przykład używamy niezbędnych plików COOKIE aby zapewnić funkcjonalność logowania i usługi wsparcia, zapamiętać informacje, takie jak preferencje językowe i funkcje, które udostępniamy na podstawie takich czynników, jak używane urządzenie oraz lokalizacja geograficzna na poziomie miasta lub kraju. Używamy również niezbędnych plików COOKIE, aby dać Tobie możliwość zaakceptowania lub odrzucenia plików COOKIE, aby pomóc nam zapamiętać Twoje wybory i ustawienia dotyczące plików COOKIE oraz aby śledzić, czy i kiedy zaakceptowałeś/zaakceptowałaś naszą Politykę Prywatności, warunki korzystania z usług i wyraziłeś/wyraziłaś zgodę na marketing e-mailowy.</p>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="consents__consent">
+                            <div class="consents__consent-checkbox">
+                                <span class="checkbox-wrap">
+                                    <input type="checkbox" id="functionalConsent" name="functionalConsent" class="checkbox js__consent">
+                                    <label for="functionalConsent"></label>
+                                </span>
+                            </div>
+
+                            <div class="consents__consent-description">
+                                <p class="consents__text">
+                                    <label for="functionalConsent"><strong>Funkcjonalne</strong></label>
+                                </p>
+
+                                <p>
+                                    <p>Pliki COOKIE dotyczące preferencji umożliwiają stronie zapamiętanie informacji, które zmieniają wygląd lub funkcjonowanie strony. Służą do gromadzenia informacji o Twoim urządzeniu i wszelkich ustawieniach skonfigurowanych na odwiedzanej stronie internetowej, platformie sprzedażowej. Obejmuje to zapamiętywanie nazwy użytkownika i hasła podczas powrotu na stronę oraz zapamiętywanie informacji o Twojej przeglądarce i preferencjach (np. preferowanego języka). Wykorzystujemy te informacje, aby dostarczać Ci spersonalizowane, ulepszone i zoptymalizowane treści oraz usługi. Prosimy o zgodę na umieszczanie plików COOKIE technicznych i funkcjonalnych, preferencyjnych.</p>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="consents__consent">
+                            <div class="consents__consent-checkbox">
+                                <span class="checkbox-wrap">
+                                    <input type="checkbox" id="analyticsConsent" name="analyticsConsent" class="checkbox js__consent">
+                                    <label for="analyticsConsent"></label>
+                                </span>
+                            </div>
+
+                            <div class="consents__consent-description">
+                                <p class="consents__text">
+                                    <label for="analyticsConsent"><strong>Analityczne</strong></label>
+                                </p>
+
+                                <p>
+                                    <p>Gromadzą statystyki, których używamy, aby jeszcze bardziej ulepszyć naszą stronę internetową, platformę sprzedażową. Informacje gromadzone za pomocą plików COOKIE wydajnościowych śledzą sposób korzystania z naszej strony internetowej, platformy sprzedażowej podczas wizyty. Pomagają nam zrozumieć wzorce użytkowania przez użytkowników, identyfikować i diagnozować problemy lub błędy, na które możesz natrafić, oraz podejmować lepsze decyzje strategiczne w celu poprawy jakości korzystania ze strony internetowej, platformy sprzedażowej. Dzięki tym plikom COOKIE uzyskujemy wgląd w sposób korzystania z naszej witryny. Prosimy o zgodę na umieszczanie plików COOKIE wydajnościowych i statystycznych.</p>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="consents__consent">
+                            <div class="consents__consent-checkbox">
+                                <span class="checkbox-wrap">
+                                    <input type="checkbox" id="platformAnalyticsConsent" name="platformAnalyticsConsent" class="checkbox js__consent">
+                                    <label for="platformAnalyticsConsent"></label>
+                                </span>
+                            </div>
+
+                            <div class="consents__consent-description">
+                                <p class="consents__text">
+                                    <label for="platformAnalyticsConsent"><strong>Analityczne dostawcy oprogramowania</strong></label>
+                                </p>
+
+                                <p>
+                                    Dane wykorzystywane przez dostawcę oprogramowania sklepu - cyber_Folks S.A. Na ich podstawie dokonywane są analizy, związane z rozwojem oprogramowania, oraz mierzona jest skuteczność kampanii reklamowych. Nie są łączone z innymi informacjami, podawanymi podczas rejestracji i składania zamówienia. Więcej na ten temat przeczytasz w <a href="https://www.shoper.pl/static/dokumenty/polityka-prywatnosci-dla-osob-odwiedzajacych-sklepy-internetowe.pdf" target="_blank" rel="noopener" data-label="Otwieranie w nowej karcie" aria-label="Polityka plików cookies Shoper - otwiera się w nowej karcie">Polityce plików cookies Shoper</a>.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="consents__consent">
+                            <div class="consents__consent-checkbox">
+                                <span class="checkbox-wrap">
+                                    <input type="checkbox" id="marketingConsent" name="marketingConsent" class="checkbox js__consent">
+                                    <label for="marketingConsent"></label>
+                                </span>
+                            </div>
+
+                            <div class="consents__consent-description">
+                                <p class="consents__text">
+                                    <label for="marketingConsent"><strong>Marketingowe</strong></label>
+                                </p>
+
+                                <p>
+                                    <p>To pliki COOKIE lub inne formy pamięci lokalnej wykorzystywane do tworzenia profili użytkowników w celu wyświetlania reklam lub śledzenia użytkownika na tej stronie internetowej, platformie sprzedażowej lub na kilku stronach internetowych w podobnych celach marketingowych. Wykorzystujemy takie pliki COOKIE, aby określić jakie treści promocyjne są bardziej istotne i właściwe dla Ciebie i Twoich zainteresowań, na podstawie informacji dotyczących Twojego dostępu do naszej platformy i innych stron internetowych na Twoich urządzeniach oraz korzystania z nich. Zewnętrzne firmy reklamowe wyświetlają reklamy towarów i usług, które mogą Cię zainteresować. Aby to zrobić, firmy te mogą umieścić lub rozpoznać unikalny plik COOKIE w Twojej przeglądarce (w tym za pomocą znaczników pikselowych). Mogą również wykorzystywać te technologie, wraz z informacjami, które gromadzą na temat Twojego korzystania z Internetu, aby rozpoznawać Cię na różnych urządzeniach, takich jak telefon komórkowy i laptop.</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="consents__advanced-buttons">
+                        <button type="button" class="btn js__show-basic-view">Anuluj</button>
+                        <button type="button" class="btn btn-red js__save-consents">Zapisz ustawienia</button>
+                    </div>
+                </diV>
+            </div>
+        </div>
+
+        <div class="consents__mask"></div>
+    </div>
+</template>
+    
+<div id="shoper-foot">
+    <a href="https://www.shoper.pl/" target="_blank" rel="noopener" title="Sklep internetowy Shoper.pl" class="popup" aria-label="Sklep stworzony na platformie Shoper. Przejdź do strony shoper.pl - otwiera się w nowej karcie">Sklep internetowy Shoper.pl</a>
+</div><script>
+/* ===== TGC LANDING v2 (The Glow Code) - dziala tylko gdy na stronie jest .tgc ===== */
+(() => {
+  const root = document.querySelector('.tgc');
+  if (!root) return;
+
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const desktop = window.matchMedia('(min-width: 861px)');
+  const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
+  const $$ = (sel, el = root) => [...el.querySelectorAll(sel)];
+
+  /* wysokosc przyklejonego headera Mance -> przypinane sekcje i pasek postepu */
+  const header = document.querySelector('.wrap > header.row, header.row');
+  const setTop = () => {
+    const h = header && getComputedStyle(header).position === 'sticky' ? header.offsetHeight : 0;
+    root.style.setProperty('--tgc-top', `${h}px`);
+  };
+  setTop();
+
+  /* FAQ z plynnym otwieraniem (dziala tez bez animacji) */
+  $$('.tgc-faq details').forEach((d) => {
+    const sum = d.querySelector('summary');
+    const body = d.querySelector('.tgc-faq__a');
+    sum.addEventListener('click', (e) => {
+      if (reduce || !body.animate) return;
+      e.preventDefault();
+      if (d.open) {
+        const a = body.animate([{ height: `${body.offsetHeight}px` }, { height: '0px' }], { duration: 300, easing: 'ease-out' });
+        a.onfinish = () => { d.open = false; };
+      } else {
+        d.open = true;
+        body.animate([{ height: '0px' }, { height: `${body.offsetHeight}px` }], { duration: 300, easing: 'ease-out' });
+      }
+    });
+  });
+
+  /* pasek zakupu na telefonie po minieciu przycisku w hero */
+  const bar = root.querySelector('#tgc-buybar');
+  const buy = root.querySelector('.tgc-hero__buy');
+  if (bar && buy && 'IntersectionObserver' in window) {
+    const link = bar.querySelector('a');
+    const finalSec = root.querySelector('.tgc-final');
+    let pastHero = false;
+    let atFinal = false;
+    const sync = () => {
+      const on = pastHero && !atFinal;
+      bar.classList.toggle('is-on', on);
+      bar.setAttribute('aria-hidden', String(!on));
+      link.tabIndex = on ? 0 : -1;
+    };
+    new IntersectionObserver(([e]) => { pastHero = !e.isIntersecting && e.boundingClientRect.top < 0; sync(); }).observe(buy);
+    if (finalSec) new IntersectionObserver(([e]) => { atFinal = e.isIntersecting || e.boundingClientRect.top < 0; sync(); }).observe(finalSec);
+  }
+
+  if (reduce || !('IntersectionObserver' in window)) return;
+  root.classList.add('tgc-js');
+
+  /* wejscie elementow + rysowanie ilustracji + zdjecia autorki */
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (!e.isIntersecting) return;
+      e.target.classList.add('is-in');
+      io.unobserve(e.target);
+    });
+  }, { rootMargin: '0px 0px -12% 0px' });
+  $$('.tgc-rv, .tgc-card, .tgc-author__media').forEach((el) => io.observe(el));
+
+  /* liczniki */
+  const countIo = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (!e.isIntersecting) return;
+      countIo.unobserve(e.target);
+      const end = parseInt(e.target.dataset.count, 10) || 0;
+      const t0 = performance.now();
+      const step = (t) => {
+        const p = clamp((t - t0) / 1400);
+        e.target.textContent = String(Math.round(end * (1 - (1 - p) ** 3)));
+        if (p < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    });
+  }, { threshold: 0.6 });
+  $$('[data-count]').forEach((el) => { el.textContent = '0'; countIo.observe(el); });
+
+  /* tekst autorki podswietlany slowo po slowie */
+  const words = root.querySelector('[data-words]');
+  let wordEls = [];
+  if (words) {
+    const parts = words.innerHTML.split(/(\s+|&nbsp;)/);
+    words.innerHTML = parts.map((p) => (/^(\s+|&nbsp;)$/.test(p) || !p ? p : `<span class="w">${p}</span>`)).join('');
+    wordEls = [...words.querySelectorAll('.w')];
+  }
+
+  /* tilt okladki + swiecace plamy za kursorem */
+  const stage = root.querySelector('[data-tilt]');
+  const inner = stage && stage.querySelector('.tgc-stage__inner');
+  const shine = stage && stage.querySelector('.tgc-stage__shine');
+  if (finePointer && stage) {
+    stage.addEventListener('pointermove', (e) => {
+      const r = stage.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width - 0.5;
+      const y = (e.clientY - r.top) / r.height - 0.5;
+      inner.style.setProperty('--ry', `${(x * 16).toFixed(2)}deg`);
+      inner.style.setProperty('--rx', `${(-y * 12).toFixed(2)}deg`);
+      if (shine) shine.style.setProperty('--sx', `${(x * 200).toFixed(0)}%`);
+    });
+    stage.addEventListener('pointerleave', () => {
+      inner.style.setProperty('--ry', '0deg');
+      inner.style.setProperty('--rx', '0deg');
+      if (shine) shine.style.setProperty('--sx', '-100%');
+    });
+  }
+  if (finePointer) {
+    $$('[data-glow]').forEach((sec) => {
+      const orbs = sec.querySelector('.tgc-orbs');
+      if (!orbs) return;
+      sec.addEventListener('pointermove', (e) => {
+        const r = sec.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5;
+        const y = (e.clientY - r.top) / r.height - 0.5;
+        orbs.style.transform = `translate(${(x * 64).toFixed(1)}px, ${(y * 64).toFixed(1)}px)`;
+      });
+    });
+
+    /* przyciski "magnetyczne" */
+    $$('[data-magnetic]').forEach((btn) => {
+      btn.addEventListener('pointermove', (e) => {
+        const r = btn.getBoundingClientRect();
+        const x = e.clientX - r.left - r.width / 2;
+        const y = e.clientY - r.top - r.height / 2;
+        btn.style.transform = `translate(${(x * 0.2).toFixed(1)}px, ${(y * 0.3).toFixed(1)}px)`;
+      });
+      btn.addEventListener('pointerleave', () => { btn.style.transform = ''; });
+    });
+  }
+
+  /* seria: poziomy scroll przypiety na desktopie */
+  const hs = root.querySelector('.tgc-hs');
+  const hsSticky = hs && hs.querySelector('.tgc-hs__sticky');
+  const hsTrack = hs && hs.querySelector('.tgc-hs__track');
+  const hsBar = hs && hs.querySelector('.tgc-hs__bar span');
+  const hsCount = hs && hs.querySelector('.tgc-hs__count b');
+  const books = hs ? [...hs.querySelectorAll('.tgc-book')] : [];
+  let hsDist = 0;
+  const layoutHs = () => {
+    if (!hs) return;
+    if (desktop.matches) {
+      hs.classList.add('is-pinned');
+      hsDist = Math.max(0, hsTrack.scrollWidth - document.documentElement.clientWidth);
+      hs.style.height = `${hsSticky.offsetHeight + hsDist}px`;
+    } else {
+      hs.classList.remove('is-pinned');
+      hs.style.height = '';
+      hsTrack.style.transform = '';
+      hsDist = 0;
+    }
+  };
+
+  const cards = $$('.tgc-card');
+  const panel = root.querySelector('.tgc-bundle__panel');
+  const fan = root.querySelector('.tgc-fan');
+  const marquee = root.querySelector('.tgc-marquee');
+  const progress = root.querySelector('.tgc-progress span');
+  const parallax = $$('[data-parallax]');
+  let lastY = window.scrollY;
+  let skew = 0;
+  let ticking = false;
+
+  const frame = () => {
+    ticking = false;
+    const vh = window.innerHeight;
+    const y = window.scrollY;
+
+    const rr = root.getBoundingClientRect();
+    if (progress) progress.style.transform = `scaleX(${clamp(-rr.top / (rr.height - vh)).toFixed(4)})`;
+
+    /* skos paska hasel od predkosci przewijania */
+    const v = y - lastY;
+    lastY = y;
+    skew += (clamp(v * 0.08, -4, 4) - skew) * 0.3;
+    if (marquee) marquee.style.setProperty('--tgc-skew', `${skew.toFixed(2)}deg`);
+    if (Math.abs(skew) > 0.05) requestTick();
+
+    /* karty filarow: poprzednia karta lekko maleje pod nastepna */
+    cards.forEach((c, i) => {
+      const next = cards[i + 1];
+      if (!next) return;
+      const p = clamp(1 - (next.getBoundingClientRect().top - c.getBoundingClientRect().top) / c.offsetHeight);
+      c.style.transform = `scale(${(1 - p * 0.06).toFixed(4)})`;
+      c.style.filter = p > 0 ? `brightness(${(1 - p * 0.12).toFixed(3)})` : '';
+    });
+
+    /* seria w poziomie */
+    if (hs && hsDist > 0) {
+      const r = hs.getBoundingClientRect();
+      const p = clamp(-r.top / hsDist);
+      hsTrack.style.transform = `translate3d(${(-p * hsDist).toFixed(1)}px, 0, 0)`;
+      if (hsBar) hsBar.style.transform = `scaleX(${p.toFixed(4)})`;
+      const idx = Math.min(books.length, Math.floor(p * books.length) + 1);
+      if (hs.dataset.active !== String(idx)) {
+        hs.dataset.active = String(idx);
+        if (hsCount) hsCount.textContent = `0${idx}`;
+      }
+    }
+
+    /* pakiet: panel rozszerza sie do pelnej szerokosci, okladki rozkladaja w wachlarz */
+    if (panel) {
+      const r = panel.getBoundingClientRect();
+      const p = clamp((vh - r.top) / (vh * 0.7));
+      const max = desktop.matches ? 48 : 16;
+      panel.style.setProperty('--ci', `${((1 - p) * max).toFixed(1)}px`);
+      panel.style.setProperty('--cr', `${((1 - p) * 48).toFixed(1)}px`);
+    }
+    if (fan) {
+      const r = fan.getBoundingClientRect();
+      fan.style.setProperty('--fp', clamp((vh - r.top) / (vh * 0.8)).toFixed(3));
+    }
+
+    /* paralaksa zdjec autorki */
+    parallax.forEach((el) => {
+      const r = el.getBoundingClientRect();
+      const c = (r.top + r.height / 2 - vh / 2) / vh;
+      el.style.translate = `0 ${(c * parseFloat(el.dataset.parallax) * 4).toFixed(1)}px`;
+    });
+
+    /* slowa autorki */
+    if (wordEls.length) {
+      const r = words.getBoundingClientRect();
+      const p = clamp((vh * 0.85 - r.top) / (r.height + vh * 0.35));
+      const lit = Math.round(p * wordEls.length);
+      wordEls.forEach((w, i) => { w.style.color = i < lit ? '' : '#8c8c90'; });
+    }
+  };
+  const requestTick = () => { if (!ticking) { ticking = true; requestAnimationFrame(frame); } };
+
+  layoutHs();
+  frame();
+  window.addEventListener('scroll', requestTick, { passive: true });
+  window.addEventListener('resize', () => { setTop(); layoutHs(); requestTick(); });
+  window.addEventListener('load', () => { layoutHs(); requestTick(); });
+})();
+/* ===== /TGC LANDING v2 ===== */
+
+</script>
+</body>
+</html>
